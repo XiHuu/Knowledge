@@ -11,7 +11,7 @@
 | PyPI 包 | `UV_DEFAULT_INDEX=https://mirrors.aliyun.com/pypi/simple/` | 实测阿里云 **9.8 MB/s**，清华 1.9 MB/s |
 | Python 解释器 | `UV_PYTHON_INSTALL_MIRROR=https://registry.npmmirror.com/-/binary/python-build-standalone/` | uv 官方支持的国内镜像 |
 | npm | `NPM_CONFIG_REGISTRY=https://registry.npmmirror.com` | |
-| 源码仓库 | `HERMES_REPO_URL=git@github.com:NousResearch/hermes-agent.git` | SSH 比 HTTPS 快约 2 倍（见坑五） |
+| 源码仓库 | `HERMES_REPO_URL=git@github.com:NousResearch/hermes-agent.git` | SSH 与 HTTPS 都实测可用；吞吐随时段波动极大（见坑三/坑五），用哪条要现测 |
 | 其余产物 | **不动** | 走 `hermes-assets.nousresearch.com`（Nous 自家 CDN，国内可达且不慢） |
 
 ---
@@ -62,16 +62,33 @@ git clone --filter=blob:none --branch main "$REPO_URL" <staged>/tree
 
 即拉全部提交和树、文件内容按需取。失败重试 3 次，再失败退化为「只拉历史、不检出」。**卡住 90% 是在检出阶段**（按需拉 blob 时被杀）。
 
-## 坑三：第三方 GitHub 镜像基本不能用 —— 必须测真实克隆
+## 坑三：第三方 GitHub 镜像 —— 要测真实克隆，而且必须测对模式
 
-| 镜像 | `git ls-remote` | 真实 `git clone` |
+| 镜像 | `git ls-remote` | 真实 `git clone --depth 1` |
 | --- | --- | --- |
-| `gitclone.com` | ✅ 0.74s | ❌ 60s 内一个字节没下来 |
-| `gh-proxy.com` | ✅ 1.81s | 能拉，但无速度优势 |
-| `ghproxy.net` | ✅ 但**慢到 28.7s**（连轻量协议都这样） | 未实测克隆，光延迟就不值得 |
+| `gitclone.com` | ✅ 0.74s | ❌ **两次独立测试都是 60s 零字节** |
+| `gh-proxy.com` | ✅ 1.81s | ✅ 350MB / **8s** —— 可以很快，但波动大 |
+| `ghproxy.net` | ✅ 但**慢到 28.7s**（连轻量协议都这样） | 未测，光延迟就不值得 |
 | `kkgithub.com` / `bgithub.xyz` / `github.moeyy.xyz` / `ghfast.top` / `hub.nuaa.cf` | ❌ 不可达 | — |
 
-**教训**：`ls-remote` 只走轻量协议，**完全不能代表能否克隆**。选镜像必须跑真实 `git clone` 计时。
+**教训一**：`ls-remote` 只走轻量协议，**完全不能代表能否克隆**。要跑真实 `git clone` 计时。
+
+**教训二（最隐蔽，也是最贵的一条）**：**必须用和安装器相同的克隆模式去测。**
+同一台机器、同一时段实测：
+
+| 模式 | 结果 |
+| --- | --- |
+| `--depth 1`（浅克隆） | ✅ **11 秒**完成，350 MB |
+| 完整克隆（≈ 安装器行为） | ❌ **60 秒超时，零字节** |
+
+安装器用的是 **blobless 部分克隆**（`--filter=blob:none`：拉全部提交和树、文件内容按需取），
+它的重量级**接近"完整克隆"而不是浅克隆**。用 `--depth 1` 测出来的漂亮数字
+**完全不能代表安装时的真实体验** —— 这就是"测速很漂亮、实际安装卡死"的根源。
+（参考：该仓库体积约 **1229 MB**。）
+
+**教训三**：**单次测速不可信。** 同一条 HTTPS 通路的 `--depth 1` 克隆，不同时刻分别测到过
+**350MB/8s、/11s、/24s、/40s** —— 限速是**突发式**的。下结论前至少测两轮，
+并且**顺序**测（并发会互相污染）。
 
 ## 坑四：GitHub 是「按 IP 黑洞」，不是整站封禁
 
