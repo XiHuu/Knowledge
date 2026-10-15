@@ -1,0 +1,28 @@
+/* Knowledge 站点自定义样式 */
+
+/* 正文行高稍放宽，中文阅读更舒服 */
+.md-typeset {
+  line-height: 1.75;
+}
+
+/* 代码块字号略小，长行不容易折行 */
+.md-typeset pre > code {
+  font-size: 0.78rem;
+}
+
+/* 表格更紧凑一点 */
+.md-typeset table:not([class]) {
+  font-size: 0.75rem;
+}
+
+/* 首页卡片网格间距 */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.4rem;
+}
+
+/* 中文字体栈 */
+:root {
+  --md-text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC",
+    "Noto Sans CJK SC", Roboto, Helvetica, Arial, sans-serif;
+}
