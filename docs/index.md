@@ -8,29 +8,39 @@
 
 <div class="grid cards" markdown>
 
--   :material-notebook-outline:{ .lg .middle } **笔记**
+-   :material-server-network:{ .lg .middle } **网络与穿透**
 
     ---
 
-    技术笔记、踩坑记录、命令速查。
+    frp vhost、SNI/TLS 透传、内网服务发布。
 
-    [:octicons-arrow-right-24: 待补充](#)
+    [:octicons-arrow-right-24: frp vhost 与 SNI 透传](frp/vhost-sni-tls.md)
 
--   :material-file-document-outline:{ .lg .middle } **文档**
-
-    ---
-
-    项目文档、方案设计、部署手册。
-
-    [:octicons-arrow-right-24: 待补充](#)
-
--   :material-lightbulb-outline:{ .lg .middle } **随手记**
+-   :material-cog-outline:{ .lg .middle } **工程实践**
 
     ---
 
-    灵感、待办、临时记录。
+    文档站流水线、CI、工具链踩坑。
 
-    [:octicons-arrow-right-24: 待补充](#)
+    [:octicons-arrow-right-24: MkDocs × GitHub Actions](devops/mkdocs-github-actions.md)
+
+-   :material-bank-outline:{ .lg .middle } **银行卡与开户**
+
+    ---
+
+    境外银行开户条件、文件清单与费用。
+
+    [:octicons-arrow-right-24: 恒生银行（香港）](banking/hang-seng-hk-account.md)
+
+-   :material-file-certificate-outline:{ .lg .middle } **税务与公司**
+
+    ---
+
+    税号申请、境外公司注册与年成本。
+
+    [:octicons-arrow-right-24: 美国 ITIN](tax/itin-us.md) ·
+    [:octicons-arrow-right-24: 英国公司成本](tax/uk-company-cost.md) ·
+    [:octicons-arrow-right-24: 马来西亚 TIN](tax/malaysia-tin.md)
 
 </div>
 
