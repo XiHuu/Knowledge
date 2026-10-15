@@ -694,7 +694,7 @@
   <a href="#github" class="md-nav__link">
     <span class="md-ellipsis">
       
-        坑三：第三方 GitHub 镜像基本不能用 —— 必须测真实克隆
+        坑三：第三方 GitHub 镜像 —— 要测真实克隆，而且必须测对模式
       
     </span>
   </a>
@@ -1132,7 +1132,7 @@
   <a href="#github" class="md-nav__link">
     <span class="md-ellipsis">
       
-        坑三：第三方 GitHub 镜像基本不能用 —— 必须测真实克隆
+        坑三：第三方 GitHub 镜像 —— 要测真实克隆，而且必须测对模式
       
     </span>
   </a>
@@ -1307,7 +1307,7 @@
 <tr>
 <td>源码仓库</td>
 <td><code>HERMES_REPO_URL=git@github.com:NousResearch/hermes-agent.git</code></td>
-<td>SSH 比 HTTPS 快约 2 倍（见坑五）</td>
+<td>SSH 与 HTTPS 都实测可用；吞吐随时段波动极大（见坑三/坑五），用哪条要现测</td>
 </tr>
 <tr>
 <td>其余产物</td>
@@ -1343,30 +1343,30 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>clone<span class="w"> </span>--filter<span class="o">=</span>blob:none<span class="w"> </span>--branch<span class="w"> </span>main<span class="w"> </span><span class="s2">"</span><span class="nv">$REPO_URL</span><span class="s2">"</span><span class="w"> </span>&lt;staged&gt;/tree
 </span></code></pre></div>
 <p>即拉全部提交和树、文件内容按需取。失败重试 3 次，再失败退化为「只拉历史、不检出」。<strong>卡住 90% 是在检出阶段</strong>（按需拉 blob 时被杀）。</p>
-<h2 id="github">坑三：第三方 GitHub 镜像基本不能用 —— 必须测真实克隆<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
+<h2 id="github">坑三：第三方 GitHub 镜像 —— 要测真实克隆，而且必须测对模式<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>镜像</th>
 <th><code>git ls-remote</code></th>
-<th>真实 <code>git clone</code></th>
+<th>真实 <code>git clone --depth 1</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>gitclone.com</code></td>
 <td>✅ 0.74s</td>
-<td>❌ 60s 内一个字节没下来</td>
+<td>❌ <strong>两次独立测试都是 60s 零字节</strong></td>
 </tr>
 <tr>
 <td><code>gh-proxy.com</code></td>
 <td>✅ 1.81s</td>
-<td>能拉，但无速度优势</td>
+<td>✅ 350MB / <strong>8s</strong> —— 可以很快，但波动大</td>
 </tr>
 <tr>
 <td><code>ghproxy.net</code></td>
 <td>✅ 但<strong>慢到 28.7s</strong>（连轻量协议都这样）</td>
-<td>未实测克隆，光延迟就不值得</td>
+<td>未测，光延迟就不值得</td>
 </tr>
 <tr>
 <td><code>kkgithub.com</code> / <code>bgithub.xyz</code> / <code>github.moeyy.xyz</code> / <code>ghfast.top</code> / <code>hub.nuaa.cf</code></td>
@@ -1375,7 +1375,34 @@
 </tr>
 </tbody>
 </table>
-<p><strong>教训</strong>：<code>ls-remote</code> 只走轻量协议，<strong>完全不能代表能否克隆</strong>。选镜像必须跑真实 <code>git clone</code> 计时。</p>
+<p><strong>教训一</strong>：<code>ls-remote</code> 只走轻量协议，<strong>完全不能代表能否克隆</strong>。要跑真实 <code>git clone</code> 计时。</p>
+<p><strong>教训二（最隐蔽，也是最贵的一条）</strong>：<strong>必须用和安装器相同的克隆模式去测。</strong>
+同一台机器、同一时段实测：</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--depth 1</code>（浅克隆）</td>
+<td>✅ <strong>11 秒</strong>完成，350 MB</td>
+</tr>
+<tr>
+<td>完整克隆（≈ 安装器行为）</td>
+<td>❌ <strong>60 秒超时，零字节</strong></td>
+</tr>
+</tbody>
+</table>
+<p>安装器用的是 <strong>blobless 部分克隆</strong>（<code>--filter=blob:none</code>：拉全部提交和树、文件内容按需取），
+它的重量级<strong>接近"完整克隆"而不是浅克隆</strong>。用 <code>--depth 1</code> 测出来的漂亮数字
+<strong>完全不能代表安装时的真实体验</strong> —— 这就是"测速很漂亮、实际安装卡死"的根源。
+（参考：该仓库体积约 <strong>1229 MB</strong>。）</p>
+<p><strong>教训三</strong>：<strong>单次测速不可信。</strong> 同一条 HTTPS 通路的 <code>--depth 1</code> 克隆，不同时刻分别测到过
+<strong>350MB/8s、/11s、/24s、/40s</strong> —— 限速是<strong>突发式</strong>的。下结论前至少测两轮，
+并且<strong>顺序</strong>测（并发会互相污染）。</p>
 <h2 id="github-ip">坑四：GitHub 是「按 IP 黑洞」，不是整站封禁<a class="headerlink" href="#github-ip" title="Permanent link">&para;</a></h2>
 <p>同一台机器上同时存在：</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>github.com                      → 20.205.243.166   ← TCP 443 握手都完不成
