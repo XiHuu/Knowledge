@@ -68,7 +68,8 @@ git clone --filter=blob:none --branch main "$REPO_URL" <staged>/tree
 | --- | --- | --- |
 | `gitclone.com` | ✅ 0.74s | ❌ 60s 内一个字节没下来 |
 | `gh-proxy.com` | ✅ 1.81s | 能拉，但无速度优势 |
-| `kkgithub.com` / `bgithub.xyz` / `github.moeyy.xyz` / `ghfast.top` | ❌ 不可达 | — |
+| `ghproxy.net` | ✅ 但**慢到 28.7s**（连轻量协议都这样） | 未实测克隆，光延迟就不值得 |
+| `kkgithub.com` / `bgithub.xyz` / `github.moeyy.xyz` / `ghfast.top` / `hub.nuaa.cf` | ❌ 不可达 | — |
 
 **教训**：`ls-remote` 只走轻量协议，**完全不能代表能否克隆**。选镜像必须跑真实 `git clone` 计时。
 
