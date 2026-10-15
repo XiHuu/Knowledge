@@ -63,6 +63,7 @@ nav:
       - frp vhost 与 SNI 透传: frp/vhost-sni-tls.md
   - 工程实践:
       - MkDocs × GitHub Actions: devops/mkdocs-github-actions.md
+      - 受限网络下部署 Hermes: devops/hermes-remote-deploy.md
   - 银行卡与开户:
       - 恒生银行（香港）: banking/hang-seng-hk-account.md
   - 税务与公司:
