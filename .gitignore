@@ -3,7 +3,8 @@
 venv/
 env/
 
-# MkDocs 构建产物
+# MkDocs 构建产物（CI 输出到 public，再推 deploy 分支 / rsync 到服务器）
+public/
 site/
 .cache/
 

@@ -6,11 +6,17 @@ on:
       - main
   workflow_dispatch:
 
+# JamesIves/github-pages-deploy-action 需要写权限（要推 deploy 分支）
 permissions:
   contents: write
 
+# 同一分支有旧任务在跑时直接取消旧的，避免两个 rsync 同时写服务器上同一个目录
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,7 +38,8 @@ jobs:
       - name: Cache mkdocs-material
         run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
 
-      - uses: actions/cache@v4
+      - name: Restore mkdocs-material cache
+        uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
@@ -42,8 +49,25 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build (strict)
+      - name: Build site
         run: mkdocs build --strict
 
-      - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+      # ---------- 渲染完成后：先把 public 推到 deploy 分支 ----------
+      - name: 部署到 Deploy 分支
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: deploy
+          folder: public
+
+      # ---------- 再把 public rsync 到服务器 ----------
+      - name: 发布到服务器
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          ARGS: "-rltgoDzvO --delete"
+          EXCLUDE: "/.git/, /.github/, /README.md, /LICENSE, /html_files.txt"
+          SOURCE: "public"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          TARGET: ${{ secrets.SITE_ADDR }}

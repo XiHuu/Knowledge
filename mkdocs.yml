@@ -3,6 +3,10 @@ site_description: 个人知识库 — 笔记、文档与随手记
 site_author: ImJingLan
 site_url: https://xihuu.github.io/Knowledge/
 
+# 构建产物目录。CI 里的 "部署到 Deploy 分支" 和 "发布到服务器" 都按 public 走，
+# 改这里就必须同步改 .github/workflows/ci.yml 里的 folder / SOURCE。
+site_dir: public
+
 repo_name: XiHuu/Knowledge
 repo_url: https://github.com/XiHuu/Knowledge
 edit_uri: edit/main/docs/
