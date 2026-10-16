@@ -20,8 +20,9 @@
 
 | 你的需求 | 看哪篇 |
 | --- | --- |
+| 我搞不清一张卡是**什么等级**（金卡 / 白金 / 御玺 / 世界之极 / 黑金） | [卡组织与卡等级体系](card-network-tiers.md) |
 | 我是学生，想办**第一张信用卡** | [学生信用卡总览（0 门槛）](mainland/student-cards-overview.md) |
-| 我是学生，想办**境外能刷的卡**（不受学生卡限制） | [中国大陆 · 境内外通用借记卡](mainland/index.md#二境内外通用借记卡) |
+| 我是学生，想办**境外能刷的卡**（不受学生卡限制） | [中国大陆 · 境内外通用借记卡](mainland/index.md#common-debit) |
 | 我想**全程线上**开一个**境外银行账户** | [iFAST Global Bank（英国）](overseas/ifast-global-bank.md) |
 | 我想开**香港银行账户** | [香港银行开户总览](hk/hk-banks-overview.md) |
 | 我想要**特定卡面 / 卡号**（B 站、2233） | [中行 2233 联名借记卡](mainland/boc-bilibili-2233.md) · [招行 bilibili 联名卡](mainland/cmb-bilibili-card.md) |
