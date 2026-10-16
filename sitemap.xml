@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://xihuu.github.io/Knowledge/</loc>
-         <lastmod>2026-10-15</lastmod>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://xihuu.github.io/Knowledge/api/deepseek-account-balance/</loc>
+         <lastmod>2026-10-16</lastmod>
     </url>
     <url>
          <loc>https://xihuu.github.io/Knowledge/banking/hang-seng-hk-account/</loc>
-         <lastmod>2026-10-15</lastmod>
+         <lastmod>2026-10-16</lastmod>
     </url>
     <url>
          <loc>https://xihuu.github.io/Knowledge/devops/hermes-remote-deploy/</loc>
-         <lastmod>2026-10-15</lastmod>
+         <lastmod>2026-10-16</lastmod>
     </url>
     <url>
          <loc>https://xihuu.github.io/Knowledge/devops/mkdocs-github-actions/</loc>
-         <lastmod>2026-10-15</lastmod>
+         <lastmod>2026-10-16</lastmod>
     </url>
     <url>
          <loc>https://xihuu.github.io/Knowledge/frp/vhost-sni-tls/</loc>
-         <lastmod>2026-10-15</lastmod>
+         <lastmod>2026-10-16</lastmod>
     </url>
     <url>
          <loc>https://xihuu.github.io/Knowledge/tax/itin-us/</loc>
-         <lastmod>2026-10-15</lastmod>
+         <lastmod>2026-10-16</lastmod>
     </url>
     <url>
          <loc>https://xihuu.github.io/Knowledge/tax/malaysia-tin/</loc>
-         <lastmod>2026-10-15</lastmod>
+         <lastmod>2026-10-16</lastmod>
     </url>
     <url>
          <loc>https://xihuu.github.io/Knowledge/tax/uk-company-cost/</loc>
-         <lastmod>2026-10-15</lastmod>
+         <lastmod>2026-10-16</lastmod>
     </url>
 </urlset>
