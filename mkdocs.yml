@@ -72,6 +72,12 @@ nav:
       - 汇丰香港（HSBC）: banking/hsbc-hk-account.md
       - 工银亚洲（ICBC Asia）: banking/icbc-asia-account.md
       - 恒生银行（Hang Seng）: banking/hang-seng-hk-account.md
+  - 信用卡:
+      - 学生信用卡总览（0 门槛）: credit-cards/student-cards-overview.md
+      - 交通银行 校园卡 / Y-POWER: credit-cards/bocom-campus-card.md
+      - 中信银行 校园 i 卡: credit-cards/citic-campus-i.md
+      - 招商银行 Young 卡 / 校园版: credit-cards/cmb-young-campus.md
+      - 其他银行学生卡与停发清单: credit-cards/other-student-cards.md
   - 税务与公司:
       - 美国 ITIN: tax/itin-us.md
       - 英国公司成本: tax/uk-company-cost.md
