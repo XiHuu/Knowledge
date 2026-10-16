@@ -7,6 +7,19 @@
 > ⚠️ 学生信用卡是**变动最频繁**的一类产品 —— 停发、重开、零额度化、申请页下线都常见。
 > 本篇核实到 2026-10，此后请以各行最新页面与客服答复为准。本文不构成建议。
 
+## 先认卡面
+
+对着卡面找产品比记名字快：
+
+![工行 宇宙星座卡校园版](../../assets/img/banking/icbc-horoscope-campus-pisces.webp){ width="228" }
+![建行 龙卡 bilibili（学生版）](../../assets/img/banking/ccb-bili-student-landscape.webp){ width="228" }
+![中行 长城无界青春卡校园版](../../assets/img/banking/boc-youth-campus.webp){ width="228" }
+
+![招行 YOUNG 卡校园版（持卡人实拍）](../../assets/img/banking/cmb-young-campus-real2.jpg){ width="228" }
+
+*卡面来源依次为：工行官网、建行官网、[CardFaceDB](https://cardfacedb.com/card/417)、招行信用卡社区持卡人实拍。
+**中信校园 i 卡与交行校园卡未找到可用卡面**（前者官网卡面已下架，后者已停发），故此处不放。*
+
 ## 一、先搞清「0 开」到底指什么
 
 | 说法 | 含义 | 是否普遍 |

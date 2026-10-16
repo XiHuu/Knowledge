@@ -6,6 +6,17 @@
 > ⚠️ **本篇的"状态"一栏最需要留意**：招行校园版的发卡状态近年有反复，见下文「状态存疑」一节。
 > 官网目前的校园版说明帖是**较早年份**的内容，权益与流程可能有变。
 
+![招行 YOUNG 卡校园版（持卡人实拍 · 红色）](../../assets/img/banking/cmb-young-campus-real1.jpg){ width="280" }
+![招行 YOUNG 卡校园版（持卡人实拍）](../../assets/img/banking/cmb-young-campus-real2.jpg){ width="280" }
+
+*校园版卡面为**红色**（上图为招行信用卡社区持卡人实拍，来源：[招行信用卡官网社区帖](https://xyk.cmbchina.com/LatteSubsite/jht/detail_75167.html)）*
+
+**青年版（金卡 · 黑色）卡面**，与校园版不是同一张卡，放一起对比：
+
+![招行 YOUNG 卡（青年版 · 金卡）](../../assets/img/banking/cmb-young-credit.webp){ width="380" }
+
+*卡面来源：[CardFaceDB](https://cardfacedb.com/card/492)（招商银行 · 银联 · 信用卡 · 金卡）*
+
 ## 两条产品线别搞混
 
 | | **Young 卡（青年版）** | **校园版信用卡** |

@@ -4,6 +4,29 @@
 工行客服「学生卡信用卡办卡额度审批规定」页、第三方 DP（idawnlight，维护至 2025-09）。
 整理时间 2026-10。
 
+![工行 宇宙星座卡校园版（双鱼座）](../../assets/img/banking/icbc-horoscope-campus-pisces.webp)
+
+*卡面来源：[CardFaceDB](https://cardfacedb.com/card/540)（宇宙星座卡校园版 · 双鱼座）*
+
+**12 星座卡面**（校园版沿用同一套星座卡面，申请时自选星座）：
+
+![白羊座](../../assets/img/banking/icbc-horoscope-01-baiyang.webp){ width="148" }
+![金牛座](../../assets/img/banking/icbc-horoscope-02-jinniu.webp){ width="148" }
+![双子座](../../assets/img/banking/icbc-horoscope-03-shuangzi.webp){ width="148" }
+![巨蟹座](../../assets/img/banking/icbc-horoscope-04-juxie.webp){ width="148" }
+
+![狮子座](../../assets/img/banking/icbc-horoscope-05-shizi.webp){ width="148" }
+![处女座](../../assets/img/banking/icbc-horoscope-06-chunv.webp){ width="148" }
+![天秤座](../../assets/img/banking/icbc-horoscope-07-tiancheng.webp){ width="148" }
+![天蝎座](../../assets/img/banking/icbc-horoscope-08-tianxie.webp){ width="148" }
+
+![射手座](../../assets/img/banking/icbc-horoscope-09-sheshou.webp){ width="148" }
+![摩羯座](../../assets/img/banking/icbc-horoscope-10-mojie.webp){ width="148" }
+![水瓶座](../../assets/img/banking/icbc-horoscope-11-shuiping.webp){ width="148" }
+![双鱼座](../../assets/img/banking/icbc-horoscope-12-shuangyu.webp){ width="148" }
+
+*12 星座卡面来源：工行官网产品页（版权归中国工商银行所有，此处仅作识别用途）。图中为 VISA 金卡面，套卡另一张为银联单币卡。*
+
 > 这是目前**官网资料最完整、且明确标注为大学生产品**的一张卡。
 > 官网页面标注「2026 年 1 月版」，是本文所有产品里**时效性最好**的一份官方信息。
 
