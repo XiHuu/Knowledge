@@ -8,6 +8,14 @@
 
 <div class="grid cards" markdown>
 
+-   :material-key-variant:{ .lg .middle } **API 与账号**
+
+    ---
+
+    API 账户查询、凭据管理与集成踩坑。
+
+    [:octicons-arrow-right-24: DeepSeek 余额与用量查询](api/deepseek-account-balance.md)
+
 -   :material-server-network:{ .lg .middle } **网络与穿透**
 
     ---
@@ -22,7 +30,8 @@
 
     文档站流水线、CI、工具链踩坑。
 
-    [:octicons-arrow-right-24: MkDocs × GitHub Actions](devops/mkdocs-github-actions.md)
+    [:octicons-arrow-right-24: MkDocs × GitHub Actions](devops/mkdocs-github-actions.md) ·
+    [:octicons-arrow-right-24: 受限网络下部署 Hermes](devops/hermes-remote-deploy.md)
 
 -   :material-bank-outline:{ .lg .middle } **银行卡与开户**
 

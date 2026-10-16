@@ -59,6 +59,8 @@ theme:
 
 nav:
   - 首页: index.md
+  - API 与账号:
+      - DeepSeek 余额与用量查询: api/deepseek-account-balance.md
   - 网络与穿透:
       - frp vhost 与 SNI 透传: frp/vhost-sni-tls.md
   - 工程实践:
