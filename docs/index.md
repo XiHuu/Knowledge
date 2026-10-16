@@ -37,9 +37,14 @@
 
     ---
 
-    境外银行开户条件、文件清单与费用。
+    香港四家银行开户条件、文件清单与费用对比。
 
-    [:octicons-arrow-right-24: 恒生银行（香港）](banking/hang-seng-hk-account.md)
+    [:octicons-arrow-right-24: 香港银行开户总览](banking/hk-banks-overview.md) ·
+    [:octicons-arrow-right-24: 中银香港](banking/bochk-hk-account.md) ·
+    [:octicons-arrow-right-24: 汇丰香港](banking/hsbc-hk-account.md)
+
+    [:octicons-arrow-right-24: 工银亚洲](banking/icbc-asia-account.md) ·
+    [:octicons-arrow-right-24: 恒生银行](banking/hang-seng-hk-account.md)
 
 -   :material-file-certificate-outline:{ .lg .middle } **税务与公司**
 

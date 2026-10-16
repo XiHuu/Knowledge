@@ -67,7 +67,11 @@ nav:
       - MkDocs × GitHub Actions: devops/mkdocs-github-actions.md
       - 受限网络下部署 Hermes: devops/hermes-remote-deploy.md
   - 银行卡与开户:
-      - 恒生银行（香港）: banking/hang-seng-hk-account.md
+      - 香港银行开户总览: banking/hk-banks-overview.md
+      - 中银香港（BOCHK）: banking/bochk-hk-account.md
+      - 汇丰香港（HSBC）: banking/hsbc-hk-account.md
+      - 工银亚洲（ICBC Asia）: banking/icbc-asia-account.md
+      - 恒生银行（Hang Seng）: banking/hang-seng-hk-account.md
   - 税务与公司:
       - 美国 ITIN: tax/itin-us.md
       - 英国公司成本: tax/uk-company-cost.md
