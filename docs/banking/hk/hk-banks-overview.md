@@ -1,5 +1,12 @@
 # 香港银行开户总览（内地居民）
 
+![中银香港](../../assets/img/banking/bochk-logo.png){ width="130" }
+![汇丰香港](../../assets/img/banking/hsbc-logo.svg){ width="130" }
+![工银亚洲](../../assets/img/banking/icbcasia-logo.png){ width="130" }
+![恒生银行](../../assets/img/banking/hangseng-logo.svg){ width="34" }
+
+*以上为四家银行官方标识，来源为各行官网（版权归各行所有，此处仅作识别用途）。*
+
 整理时间 2026-10。来源：各行官网、官方收费表与官方 App 流程说明；少数媒体/第三方整理已单独标注。
 
 > ⚠️ 银行政策与费率调整频繁。本文用于**先想清楚走哪条路**，动手前务必以网点、官网、App 当时的提示为准。

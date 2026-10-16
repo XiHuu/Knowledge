@@ -67,15 +67,23 @@ nav:
       - MkDocs × GitHub Actions: devops/mkdocs-github-actions.md
       - 受限网络下部署 Hermes: devops/hermes-remote-deploy.md
   - 银行卡与开户:
+      - 银行卡与开户（总览）: banking/index.md
       - 中国大陆:
-          - 学生信用卡总览（0 门槛）: banking/mainland/student-cards-overview.md
-          - 工行 宇宙星座信用卡校园版: banking/mainland/icbc-constellation-campus.md
-          - 建行 龙卡 bilibili（学生版）: banking/mainland/ccb-bilibili-campus.md
-          - 中行 长城无界青春卡校园版: banking/mainland/boc-greatwall-campus.md
-          - 中信银行 校园 i 卡: banking/mainland/citic-campus-i.md
-          - 招商银行 Young 卡 / 校园版: banking/mainland/cmb-young-campus.md
-          - 交通银行 校园卡（已停发）: banking/mainland/bocom-campus-card.md
-          - 其他银行学生卡与停发清单: banking/mainland/other-student-cards.md
+          - 中国大陆银行卡总览: banking/mainland/index.md
+          - 学生信用卡（0 门槛）:
+              - 学生信用卡总览（0 门槛）: banking/mainland/student-cards-overview.md
+              - 工行 宇宙星座信用卡校园版: banking/mainland/icbc-constellation-campus.md
+              - 建行 龙卡 bilibili（学生版）: banking/mainland/ccb-bilibili-campus.md
+              - 中行 长城无界青春卡校园版: banking/mainland/boc-greatwall-campus.md
+              - 中信银行 校园 i 卡: banking/mainland/citic-campus-i.md
+              - 招商银行 Young 卡 / 校园版: banking/mainland/cmb-young-campus.md
+              - 交通银行 校园卡（已停发）: banking/mainland/bocom-campus-card.md
+              - 其他银行学生卡与停发清单: banking/mainland/other-student-cards.md
+          - 境内外通用借记卡:
+              - 招商银行 万事达人民币 IC 借记卡: banking/mainland/cmb-mastercard.md
+              - 中信银行 美国运通人民币借记卡: banking/mainland/citic-amex-debit.md
+              - 中国银行 bilibili 2233 联名借记卡: banking/mainland/boc-bilibili-2233.md
+              - 招商银行 bilibili 花嫁联名储蓄卡: banking/mainland/cmb-bilibili-card.md
       - 香港:
           - 香港银行开户总览: banking/hk/hk-banks-overview.md
           - 中银香港（BOCHK）: banking/hk/bochk-hk-account.md
@@ -83,7 +91,8 @@ nav:
           - 工银亚洲（ICBC Asia）: banking/hk/icbc-asia-account.md
           - 恒生银行（Hang Seng）: banking/hk/hang-seng-hk-account.md
       - 海外:
-          - 海外银行卡与信用卡（待补充）: banking/overseas/index.md
+          - 海外银行卡与信用卡（总览）: banking/overseas/index.md
+          - iFAST Global Bank（英国）开户: banking/overseas/ifast-global-bank.md
   - 税务与公司:
       - 美国 ITIN: tax/itin-us.md
       - 英国公司成本: tax/uk-company-cost.md

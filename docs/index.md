@@ -37,9 +37,9 @@
 
     ---
 
-    按地区分：中国大陆学生信用卡、香港银行开户、海外银行卡。
+    按地区分：中国大陆（学生信用卡 + 境内外通用借记卡）、香港银行开户、海外银行卡。
 
-    **中国大陆**
+    **中国大陆 · 学生信用卡（0 门槛）**
 
     [:octicons-arrow-right-24: 学生信用卡总览](banking/mainland/student-cards-overview.md) ·
     [:octicons-arrow-right-24: 工行星座卡校园版](banking/mainland/icbc-constellation-campus.md)
@@ -52,6 +52,14 @@
     [:octicons-arrow-right-24: 交行校园卡（已停发）](banking/mainland/bocom-campus-card.md) ·
     [:octicons-arrow-right-24: 其他银行与停发清单](banking/mainland/other-student-cards.md)
 
+    **中国大陆 · 境内外通用借记卡**
+
+    [:octicons-arrow-right-24: 招行万事达 IC 借记卡](banking/mainland/cmb-mastercard.md) ·
+    [:octicons-arrow-right-24: 中信运通人民币借记卡](banking/mainland/citic-amex-debit.md)
+
+    [:octicons-arrow-right-24: 中行 bilibili 2233 借记卡](banking/mainland/boc-bilibili-2233.md) ·
+    [:octicons-arrow-right-24: 招行 bilibili 花嫁储蓄卡](banking/mainland/cmb-bilibili-card.md)
+
     **香港**
 
     [:octicons-arrow-right-24: 香港银行开户总览](banking/hk/hk-banks-overview.md) ·
@@ -63,7 +71,8 @@
 
     **海外**
 
-    [:octicons-arrow-right-24: 海外银行卡与信用卡（待补充）](banking/overseas/index.md)
+    [:octicons-arrow-right-24: iFAST Global Bank（英国）](banking/overseas/ifast-global-bank.md) ·
+    [:octicons-arrow-right-24: 海外目录](banking/overseas/index.md)
 
 -   :material-file-certificate-outline:{ .lg .middle } **税务与公司**
 

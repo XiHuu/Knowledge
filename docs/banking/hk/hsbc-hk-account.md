@@ -1,5 +1,9 @@
 # 汇丰香港（HSBC HK）开户指南
 
+![汇丰香港（HSBC HK）](../../assets/img/banking/hsbc-logo.svg){ width="180" }
+
+*图片来源：汇丰香港官网（版权归 HSBC 所有，此处仅作识别用途）*
+
 来源：汇丰香港官网「How to open a Hong Kong account」「网上开银行户口」页、汇丰 One 产品页与官方 Welcome Pack。
 整理时间 2026-10。少数第三方口径已单独标注。
 
