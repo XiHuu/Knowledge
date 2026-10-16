@@ -109,6 +109,11 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.critic
   - pymdownx.details
+  # 必需：解析 :material-xxx: / :octicons-xxx: / :fontawesome-xxx: 短代码为内联 SVG。
+  # 缺了它，首页卡片标题和 extra.social 的图标都会原样显示成文字。
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
