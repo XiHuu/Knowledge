@@ -37,31 +37,33 @@
 
     ---
 
-    香港四家银行开户条件、文件清单与费用对比。
+    按地区分：中国大陆学生信用卡、香港银行开户、海外银行卡。
 
-    [:octicons-arrow-right-24: 香港银行开户总览](banking/hk-banks-overview.md) ·
-    [:octicons-arrow-right-24: 中银香港](banking/bochk-hk-account.md) ·
-    [:octicons-arrow-right-24: 汇丰香港](banking/hsbc-hk-account.md)
+    **中国大陆**
 
-    [:octicons-arrow-right-24: 工银亚洲](banking/icbc-asia-account.md) ·
-    [:octicons-arrow-right-24: 恒生银行](banking/hang-seng-hk-account.md)
+    [:octicons-arrow-right-24: 学生信用卡总览](banking/mainland/student-cards-overview.md) ·
+    [:octicons-arrow-right-24: 工行星座卡校园版](banking/mainland/icbc-constellation-campus.md)
 
--   :material-card-account-details-outline:{ .lg .middle } **信用卡**
+    [:octicons-arrow-right-24: 建行 bilibili 学生版](banking/mainland/ccb-bilibili-campus.md) ·
+    [:octicons-arrow-right-24: 中行长城无界青春卡](banking/mainland/boc-greatwall-campus.md) ·
+    [:octicons-arrow-right-24: 中信校园 i 卡](banking/mainland/citic-campus-i.md)
 
-    ---
+    [:octicons-arrow-right-24: 招行 Young 卡](banking/mainland/cmb-young-campus.md) ·
+    [:octicons-arrow-right-24: 交行校园卡（已停发）](banking/mainland/bocom-campus-card.md) ·
+    [:octicons-arrow-right-24: 其他银行与停发清单](banking/mainland/other-student-cards.md)
 
-    大学生 0 门槛 / 0 年费信用卡：监管前提、两家名额上限、逐家产品详解与停发清单。
+    **香港**
 
-    [:octicons-arrow-right-24: 学生信用卡总览](credit-cards/student-cards-overview.md) ·
-    [:octicons-arrow-right-24: 工行星座卡校园版](credit-cards/icbc-constellation-campus.md)
+    [:octicons-arrow-right-24: 香港银行开户总览](banking/hk/hk-banks-overview.md) ·
+    [:octicons-arrow-right-24: 中银香港](banking/hk/bochk-hk-account.md) ·
+    [:octicons-arrow-right-24: 汇丰香港](banking/hk/hsbc-hk-account.md)
 
-    [:octicons-arrow-right-24: 建行 bilibili 学生版](credit-cards/ccb-bilibili-campus.md) ·
-    [:octicons-arrow-right-24: 中行长城无界青春卡](credit-cards/boc-greatwall-campus.md) ·
-    [:octicons-arrow-right-24: 中信校园 i 卡](credit-cards/citic-campus-i.md)
+    [:octicons-arrow-right-24: 工银亚洲](banking/hk/icbc-asia-account.md) ·
+    [:octicons-arrow-right-24: 恒生银行](banking/hk/hang-seng-hk-account.md)
 
-    [:octicons-arrow-right-24: 招行 Young 卡](credit-cards/cmb-young-campus.md) ·
-    [:octicons-arrow-right-24: 交行校园卡（已停发）](credit-cards/bocom-campus-card.md) ·
-    [:octicons-arrow-right-24: 其他银行与停发清单](credit-cards/other-student-cards.md)
+    **海外**
+
+    [:octicons-arrow-right-24: 海外银行卡与信用卡（待补充）](banking/overseas/index.md)
 
 -   :material-file-certificate-outline:{ .lg .middle } **税务与公司**
 

@@ -67,20 +67,23 @@ nav:
       - MkDocs × GitHub Actions: devops/mkdocs-github-actions.md
       - 受限网络下部署 Hermes: devops/hermes-remote-deploy.md
   - 银行卡与开户:
-      - 香港银行开户总览: banking/hk-banks-overview.md
-      - 中银香港（BOCHK）: banking/bochk-hk-account.md
-      - 汇丰香港（HSBC）: banking/hsbc-hk-account.md
-      - 工银亚洲（ICBC Asia）: banking/icbc-asia-account.md
-      - 恒生银行（Hang Seng）: banking/hang-seng-hk-account.md
-  - 信用卡:
-      - 学生信用卡总览（0 门槛）: credit-cards/student-cards-overview.md
-      - 工行 宇宙星座信用卡校园版: credit-cards/icbc-constellation-campus.md
-      - 建行 龙卡 bilibili（学生版）: credit-cards/ccb-bilibili-campus.md
-      - 中行 长城无界青春卡校园版: credit-cards/boc-greatwall-campus.md
-      - 中信银行 校园 i 卡: credit-cards/citic-campus-i.md
-      - 招商银行 Young 卡 / 校园版: credit-cards/cmb-young-campus.md
-      - 交通银行 校园卡（已停发）: credit-cards/bocom-campus-card.md
-      - 其他银行学生卡与停发清单: credit-cards/other-student-cards.md
+      - 中国大陆:
+          - 学生信用卡总览（0 门槛）: banking/mainland/student-cards-overview.md
+          - 工行 宇宙星座信用卡校园版: banking/mainland/icbc-constellation-campus.md
+          - 建行 龙卡 bilibili（学生版）: banking/mainland/ccb-bilibili-campus.md
+          - 中行 长城无界青春卡校园版: banking/mainland/boc-greatwall-campus.md
+          - 中信银行 校园 i 卡: banking/mainland/citic-campus-i.md
+          - 招商银行 Young 卡 / 校园版: banking/mainland/cmb-young-campus.md
+          - 交通银行 校园卡（已停发）: banking/mainland/bocom-campus-card.md
+          - 其他银行学生卡与停发清单: banking/mainland/other-student-cards.md
+      - 香港:
+          - 香港银行开户总览: banking/hk/hk-banks-overview.md
+          - 中银香港（BOCHK）: banking/hk/bochk-hk-account.md
+          - 汇丰香港（HSBC）: banking/hk/hsbc-hk-account.md
+          - 工银亚洲（ICBC Asia）: banking/hk/icbc-asia-account.md
+          - 恒生银行（Hang Seng）: banking/hk/hang-seng-hk-account.md
+      - 海外:
+          - 海外银行卡与信用卡（待补充）: banking/overseas/index.md
   - 税务与公司:
       - 美国 ITIN: tax/itin-us.md
       - 英国公司成本: tax/uk-company-cost.md
