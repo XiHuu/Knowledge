@@ -12,7 +12,7 @@
 对着卡面找产品比记名字快：
 
 ![工行 宇宙星座卡校园版](../../assets/img/banking/icbc-horoscope-campus-pisces.webp){ width="228" }
-![建行 龙卡 bilibili（学生版）](../../assets/img/banking/ccb-bili-student-landscape.webp){ width="228" }
+![建行 龙卡 bilibili（学生版 · 2233星月学生版 金卡）](../../assets/img/banking/ccb-bili-2233-xingyue-student-gold.webp){ width="230" }
 ![中行 长城无界青春卡校园版](../../assets/img/banking/boc-youth-campus.webp){ width="228" }
 
 ![招行 YOUNG 卡校园版（持卡人实拍）](../../assets/img/banking/cmb-young-campus-real2.jpg){ width="228" }
