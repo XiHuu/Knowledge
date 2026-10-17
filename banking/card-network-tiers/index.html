@@ -960,6 +960,45 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#bin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        卡号是怎么构成的（BIN + 校验位）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="卡号是怎么构成的（BIN + 校验位）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#luhn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Luhn 校验：怎么算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k-10k-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        组合数学：k 位不知道 → 恰好 10^(k-1) 个「合法」卡号
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#2026-10" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2180,6 +2219,45 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#bin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        卡号是怎么构成的（BIN + 校验位）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="卡号是怎么构成的（BIN + 校验位）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#luhn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Luhn 校验：怎么算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k-10k-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        组合数学：k 位不知道 → 恰好 10^(k-1) 个「合法」卡号
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#2026-10" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2527,6 +2605,110 @@
 </tbody>
 </table>
 <p>各家的分级逻辑和权益并不一一对应，这张表只用来「换算量级」。</p>
+<h2 id="bin">卡号是怎么构成的（BIN + 校验位）<a class="headerlink" href="#bin" title="Permanent link">&para;</a></h2>
+<p>卡号不是随机串，是两段拼起来的：</p>
+<table>
+<thead>
+<tr>
+<th>段</th>
+<th>位置</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BIN</strong>（发卡行识别码）</td>
+<td>前 <strong>6–8 位</strong></td>
+<td>卡组织 + 发卡行 + 产品</td>
+</tr>
+<tr>
+<td>客户号</td>
+<td>中间</td>
+<td>发卡行自己编；「卡号定制」能改的只有这一段</td>
+</tr>
+<tr>
+<td><strong>校验位</strong></td>
+<td><strong>最后一位</strong></td>
+<td>Luhn 算法算出来的，防止手输打错</td>
+</tr>
+</tbody>
+</table>
+<p><strong>位数</strong>：Visa / 万事达 / 银联以 <strong>16 位</strong>为主（银联部分借记卡 19 位）；<strong>运通 15 位</strong>。</p>
+<p><strong>首位数字 ≈ 卡组织</strong>（准确率很高，但最终以卡面 logo 为准）：</p>
+<table>
+<thead>
+<tr>
+<th>首位</th>
+<th>卡组织</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>4</code></td>
+<td>Visa</td>
+</tr>
+<tr>
+<td><code>5</code>、<code>2</code>（2221–2720）</td>
+<td>万事达</td>
+</tr>
+<tr>
+<td><code>34</code>、<code>37</code></td>
+<td>美国运通</td>
+</tr>
+<tr>
+<td><code>35</code></td>
+<td>JCB</td>
+</tr>
+<tr>
+<td><code>62</code>、<code>60</code>、<code>81</code></td>
+<td>银联</td>
+</tr>
+<tr>
+<td><code>6</code>（除 62 / 60）</td>
+<td>Discover</td>
+</tr>
+</tbody>
+</table>
+<h3 id="luhn">Luhn 校验：怎么算<a class="headerlink" href="#luhn" title="Permanent link">&para;</a></h3>
+<p>从<strong>最右一位往左</strong>数，第 2、4、6… 位（偶数位）<strong>乘 2</strong>；乘出来 ≥ 10 的减去 9；
+把所有位加起来，<strong>总和必须是 10 的倍数</strong>。</p>
+<p>它只能抓<strong>单个数字打错</strong>和<strong>相邻两位写反</strong> —— 不是加密，也不是防伪造。</p>
+<h3 id="k-10k-1">组合数学：k 位不知道 → 恰好 10^(k-1) 个「合法」卡号<a class="headerlink" href="#k-10k-1" title="Permanent link">&para;</a></h3>
+<p>给定其余位之后，总有<strong>且只有一个</strong>取值能把总和凑成 10 的倍数。
+所以通过率<strong>恒为 10%</strong>，与卡组织、与未知位在哪儿都无关。</p>
+<table>
+<thead>
+<tr>
+<th>已知情况</th>
+<th>候选串</th>
+<th>Luhn 通过</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16 位全未知（首位非 0）</td>
+<td>9×10¹⁵</td>
+<td>9×10¹⁴（900 万亿）</td>
+</tr>
+<tr>
+<td>BIN 前 6 位已知</td>
+<td>10¹⁰</td>
+<td>10⁹（10 亿）</td>
+</tr>
+<tr>
+<td>前 6 位 + 后 6 位已知（中间 4 位空）</td>
+<td>10⁴</td>
+<td><strong>10³（1,000）</strong></td>
+</tr>
+</tbody>
+</table>
+<p>🔴 <strong>这就是为什么 Luhn 没有安全意义</strong>：全球流通卡量约 <strong>190 亿张</strong>
+（截至 2025 年底口径），而仅 16 位里的「Luhn 合法」串就有 <strong>900 万亿</strong>个 ——
+<strong>大约每 47,000 个合法串才对应一张真实存在的卡</strong>。「能过 Luhn」证明不了任何事。</p>
+<blockquote>
+<p>也因此，<strong>拿已知前缀去穷举中间位、再用 Luhn 筛</strong>这套动作就是业内说的
+<strong>BIN attack</strong>（撞卡号）。它不靠技术含量，只靠量大。</p>
+</blockquote>
 <h2 id="2026-10">中国大陆的四家清算格局（2026-10）<a class="headerlink" href="#2026-10" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
