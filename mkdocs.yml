@@ -69,6 +69,7 @@ nav:
   - 银行卡与开户:
       - 银行卡与开户（总览）: banking/index.md
       - 卡组织与卡等级体系: banking/card-network-tiers.md
+      - 玩卡圈常用站点: banking/card-community-sites.md
       - 中国大陆:
           - 中国大陆银行卡总览: banking/mainland/index.md
           - 学生信用卡（0 门槛）:
