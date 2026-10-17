@@ -140,7 +140,36 @@
 从**最右一位往左**数，第 2、4、6… 位（偶数位）**乘 2**；乘出来 ≥ 10 的减去 9；
 把所有位加起来，**总和必须是 10 的倍数**。
 
-它只能抓**单个数字打错**和**相邻两位写反** —— 不是加密，也不是防伪造。
+它只能抓**单个数字打错**（实测 100%）和**相邻两位写反** ——
+而且相邻换位里**唯独 0↔9 互换抓不住**（`…0901` 与 `…0091` 都能过），三位以上的重排也抓不住。
+不是加密，也不是防伪造。
+
+```python
+def luhn_valid(number: str) -> bool:
+    """卡号是否通过 Luhn 校验。number 里允许有空格或连字符。"""
+    digits = [int(c) for c in number if c.isdigit()]
+    total = 0
+    for i, d in enumerate(reversed(digits)):
+        if i & 1:                 # 从右数第 2、4、6… 位翻倍
+            d *= 2
+            if d > 9:
+                d -= 9
+        total += d
+    return total % 10 == 0
+
+
+def luhn_check_digit(body: str) -> str:
+    """给不含校验位的号体算出校验位。luhn_check_digit("7992739871") -> '3'"""
+    digits = [int(c) for c in body if c.isdigit()]
+    total = 0
+    for i, d in enumerate(reversed(digits + [0])):   # 末尾补 0 占住校验位
+        if i & 1:
+            d *= 2
+            if d > 9:
+                d -= 9
+        total += d
+    return str((-total) % 10)
+```
 
 ### 组合数学：k 位不知道 → 恰好 10^(k-1) 个「合法」卡号
 
