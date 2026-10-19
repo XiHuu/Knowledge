@@ -101,6 +101,7 @@ nav:
       - 英国公司成本: tax/uk-company-cost.md
       - 马来西亚 TIN: tax/malaysia-tin.md
       - 德国税号（010250 表）: tax/germany-tax-id.md
+      - ITIN 与 1040-NR「零申报」: tax/us-zero-return.md
 
 plugins:
   - search:
