@@ -99,6 +99,7 @@ nav:
       - 美国 ITIN: tax/itin-us.md
       - 英国公司成本: tax/uk-company-cost.md
       - 马来西亚 TIN: tax/malaysia-tin.md
+      - 德国税号（010250 表）: tax/germany-tax-id.md
 
 plugins:
   - search:
