@@ -2397,7 +2397,21 @@
 <li>能力：登录（含 QR）、收发消息、群管、历史检索、会话名模糊匹配</li>
 <li>代理：内置 <code>TELEGRAM_PROXY_TYPE</code> / <code>TELEGRAM_PROXY_HOST</code> / <code>TELEGRAM_PROXY_PORT</code>，
   README 明确写 "required when Telegram is unreachable directly"</li>
-<li>缺：<strong>没有 webhook daemon</strong>，只做 CLI</li>
+<li><strong>实时消息：有 <code>tg listen</code>，但出口是 stdout 不是 webhook</strong></li>
+<li><code>tg listen [chat] [--media] [--once] [--timeout N]</code> —— 新消息流式打到 <strong>stdout</strong>，
+    默认所有会话；<code>--json</code> 出原始 JSON；<code>--once</code> 命中第一条就退；
+    <code>--timeout</code> 到点退出（<strong>exit 3</strong>）</li>
+<li>退出码：<code>0</code> 成功 / <code>1</code> 命令错 / <code>2</code> 配置或连接错 / <code>3</code> listen 超时 / <code>130</code> 中断</li>
+<li>🔴 <strong>硬限制</strong>（README 原文）：<em>"Telegram pushes updates only to the newest
+    connection of a session, so avoid running other <code>tg</code> commands while <code>listen</code>
+    is active — they temporarily take update delivery over."</em>
+    即 <code>listen</code> <strong>独占</strong> update 投递；同时跑别的 <code>tg</code> 命令会抢走投递、漏消息</li>
+<li>设计上是<strong>短连接</strong>（README：one <code>tg</code> invocation = one short-lived connection
+    by design），要常驻得靠 systemd <code>Restart=always</code> + <code>--timeout</code> 兜底</li>
+<li>所以「主动上报」要<strong>自己接一段管道</strong>：<code>tg listen --json</code> → 逐行 POST</li>
+<li>缺：<strong>原生没有 webhook / daemon</strong>，只做 CLI</li>
+<li>⚠️ 项目年龄：版本 <code>0.1.0</code> → <code>0.6.0</code> <strong>全部发布于 2026-09-06</strong>，最后 <code>0.6.0</code> 在 09-08；
+  PyPI 上无 <code>home_page</code>、无 <code>project_urls</code></li>
 </ul>
 <h3 id="mtproto-cli">mtproto-cli<a class="headerlink" href="#mtproto-cli" title="Permanent link">&para;</a></h3>
 <ul>
