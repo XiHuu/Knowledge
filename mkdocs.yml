@@ -96,6 +96,8 @@ nav:
       - 海外:
           - 海外银行卡与信用卡（总览）: banking/overseas/index.md
           - iFAST Global Bank（英国）开户: banking/overseas/ifast-global-bank.md
+  - 摄影器材:
+      - 适马 fp → fp2 升级对比: gear/sigma-fp2.md
   - 税务与公司:
       - 美国 ITIN: tax/itin-us.md
       - 英国公司成本: tax/uk-company-cost.md
