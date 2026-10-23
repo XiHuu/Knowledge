@@ -12,8 +12,6 @@ _按提交时间从新到旧，自动生成。想看全部改动就翻 [commit �
 
 | 日期 | 页面 | 变更 |
 | --- | --- | --- |
-| 2026-10-23 | [BATCH：密封竞价批处理清算层](crypto/batch-sealed-auction.md) | BATCH 白皮书 v1.0——补完代币经济、安全模型、形式化不变式与风险披露 |
-| 2026-10-23 | [BATCH：密封竞价批处理清算层](crypto/batch-sealed-auction.md) | BATCH 密封竞价批处理清算层 · 技术白皮书草案 v0.1 |
 | 2026-10-23 | [适马 fp → fp2：六年后换掉了什么](gear/sigma-fp2.md) | 适马 fp → fp2 升级对比 |
 | 2026-10-20 | [美国 ITIN（个人纳税人识别号）](tax/itin-us.md) · [有了 ITIN 之后：1040-NR 的「零申报」到底怎么做](tax/us-zero-return.md) | 新增「有了 ITIN 之后：1040-NR 的零申报到底怎么做」 |
 | 2026-10-19 | [成为 AS operator：自持 ASN、自有 IP 段、自己跑 BGP](network/as-operator.md) | 新增「成为 AS operator：自持 ASN、自有 IP 段、自己跑 BGP」 |
@@ -124,7 +122,7 @@ _按提交时间从新到旧，自动生成。想看全部改动就翻 [commit �
 
     链上机制设计、密码学构造与白皮书。
 
-    [:octicons-arrow-right-24: BATCH：密封竞价批处理清算层](crypto/batch-sealed-auction.md)
+    [:octicons-arrow-right-24: KAIROS（KAI）白皮书](crypto/kairos-whitepaper.md)
 
 -   :material-camera-outline:{ .lg .middle } **摄影器材**
 
