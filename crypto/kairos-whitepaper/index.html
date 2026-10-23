@@ -12,7 +12,7 @@
         <meta name="author" content="ImJingLan">
       
       
-        <link rel="canonical" href="https://xihuu.github.io/Knowledge/crypto/batch-sealed-auction/">
+        <link rel="canonical" href="https://xihuu.github.io/Knowledge/crypto/kairos-whitepaper/">
       
       
         <link rel="prev" href="../../banking/overseas/ifast-global-bank/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>BATCH：密封竞价批处理清算层（白皮书草案） - Knowledge</title>
+        <title>KAIROS（KAI）· 链上统一价清算层 - Knowledge</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#batch" class="md-skip">
+        <a href="#kairos" class="md-skip">
           跳转至
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BATCH：密封竞价批处理清算层（白皮书草案）
+              KAIROS（KAI）· 链上统一价清算层
             
           </span>
         </div>
@@ -1912,7 +1912,7 @@
   <span class="md-ellipsis">
     
   
-    BATCH：密封竞价批处理清算层（白皮书草案）
+    KAIROS（KAI）· 链上统一价清算层
   
 
     
@@ -1930,7 +1930,7 @@
   <span class="md-ellipsis">
     
   
-    BATCH：密封竞价批处理清算层（白皮书草案）
+    KAIROS（KAI）· 链上统一价清算层
   
 
     
@@ -1967,22 +1967,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 引言
+        一、为什么现在的市场是错的
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. 引言">
+    <nav class="md-nav" aria-label="一、为什么现在的市场是错的">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1 一个被定价的权力
+        1.1 速度税
       
     </span>
   </a>
@@ -1993,7 +1993,7 @@
   <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2 换一个问法
+        1.2 修补的四个阶段
       
     </span>
   </a>
@@ -2004,7 +2004,7 @@
   <a href="#13" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3 这个设计代价是什么
+        1.3 问题的真正形状
       
     </span>
   </a>
@@ -2017,22 +2017,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#kairos_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 背景
+        二、KAIROS 的主张
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. 背景">
+    <nav class="md-nav" aria-label="二、KAIROS 的主张">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-mev" class="md-nav__link">
+  <a href="#21" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1 MEV 的演化
+        2.1 三句话
       
     </span>
   </a>
@@ -2043,18 +2043,7 @@
   <a href="#22" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.2 现有方案的结构性局限
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.3 批处理拍卖的理论根
+        2.2 与主流方案的差异
       
     </span>
   </a>
@@ -2067,33 +2056,72 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 设计哲学
+        三、协议架构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、协议架构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 分层
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. 协议架构
+        3.2 订单生命周期
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. 协议架构">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 时间轴
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、SEAL：封存与解封
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、SEAL：封存与解封">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#41" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1 分层
+        4.1 门限加密
       
     </span>
   </a>
@@ -2104,7 +2132,7 @@
   <a href="#42" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2 订单生命周期
+        4.2 订单编码
       
     </span>
   </a>
@@ -2115,7 +2143,18 @@
   <a href="#43" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3 时间轴
+        4.3 密钥轮换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 保证金
       
     </span>
   </a>
@@ -2128,22 +2167,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#clear" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. 密码学层
+        五、CLEAR：统一价清算引擎
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. 密码学层">
+    <nav class="md-nav" aria-label="五、CLEAR：统一价清算引擎">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#51" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.1 门限加密
+        5.1 撮合规则
       
     </span>
   </a>
@@ -2154,7 +2193,7 @@
   <a href="#52" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.2 订单编码——最容易翻车的地方
+        5.2 一个算例
       
     </span>
   </a>
@@ -2165,7 +2204,7 @@
   <a href="#53" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.3 密钥轮换
+        5.3 排序无关性
       
     </span>
   </a>
@@ -2176,7 +2215,18 @@
   <a href="#54" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.4 保证金与质押
+        5.4 并列清算价
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 报价偏离保护
       
     </span>
   </a>
@@ -2189,22 +2239,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
+  <a href="#settle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. 清算引擎
+        六、SETTLE：结算与证明
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6. 清算引擎">
+    <nav class="md-nav" aria-label="六、SETTLE：结算与证明">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#61" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.1 统一价双向拍卖
+        6.1 乐观模式
       
     </span>
   </a>
@@ -2215,7 +2265,7 @@
   <a href="#62" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.2 一个具体例子
+        6.2 有效性证明模式
       
     </span>
   </a>
@@ -2226,18 +2276,7 @@
   <a href="#63" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.3 排序无关性（形式化陈述）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#64" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.4 并列清算价的处理
+        6.3 数据可用性
       
     </span>
   </a>
@@ -2250,22 +2289,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. 结算与证明
+        七、委员会与共识
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="7. 结算与证明">
+    <nav class="md-nav" aria-label="七、委员会与共识">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#71-v01v05" class="md-nav__link">
+  <a href="#71" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.1 乐观模式（v0.1–v0.5）
+        7.1 选举
       
     </span>
   </a>
@@ -2273,10 +2312,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#72-v10" class="md-nav__link">
+  <a href="#72" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.2 有效性证明模式（v1.0）
+        7.2 合谋的边界
       
     </span>
   </a>
@@ -2287,7 +2326,7 @@
   <a href="#73" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.3 数据可用性
+        7.3 罚没条件
       
     </span>
   </a>
@@ -2300,22 +2339,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. 委员会与共识
+        八、强制纳入
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="8. 委员会与共识">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、KAI 代币经济
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、KAI 代币经济">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#81" class="md-nav__link">
+  <a href="#91" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.1 合谋的可量化泄漏
+        9.1 总量与分配
       
     </span>
   </a>
@@ -2323,10 +2373,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#82" class="md-nav__link">
+  <a href="#92" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.2 委员会选举
+        9.2 价值来源
       
     </span>
   </a>
@@ -2334,10 +2384,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#83" class="md-nav__link">
+  <a href="#93" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.3 罚没条件（客观可判）
+        9.3 费用分配
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 质押收益
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 不做什么
       
     </span>
   </a>
@@ -2350,33 +2422,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. 抗审查
+        十、生态与应用
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10. 代币经济
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="10. 代币经济">
+    <nav class="md-nav" aria-label="十、生态与应用">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#101" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.1 为什么要有代币
+        10.1 现货兑换
       
     </span>
   </a>
@@ -2387,7 +2448,7 @@
   <a href="#102" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.2 代币用途（若启用）
+        10.2 大宗交易
       
     </span>
   </a>
@@ -2395,10 +2456,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#103" class="md-nav__link">
+  <a href="#103-dao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.3 分配（设计假设值）
+        10.3 DAO 财库换仓
       
     </span>
   </a>
@@ -2409,7 +2470,7 @@
   <a href="#104" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.4 费用与回购销毁
+        10.4 借贷清算
       
     </span>
   </a>
@@ -2420,29 +2481,7 @@
   <a href="#105" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.5 质押收益的来源（以及它的上限）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#106" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10.6 治理
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#107-v01" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10.7 零代币模式（v0.1 默认）
+        10.5 预言机与预测市场
       
     </span>
   </a>
@@ -2455,60 +2494,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11_1" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. 安全模型
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="11. 安全模型">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#111" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11.1 威胁模型
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#112" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11.2 形式化不变式
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#113" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11.3 攻击面
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        12. 性能与扩展
+        十一、治理
       
     </span>
   </a>
@@ -2516,10 +2505,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#13_1" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13. 应用场景
+        十二、路线图
       
     </span>
   </a>
@@ -2527,10 +2516,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#14" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        14. 路线图
+        十三、贡献者
       
     </span>
   </a>
@@ -2538,10 +2527,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#15" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
-        15. 团队
+        十四、风险
       
     </span>
   </a>
@@ -2549,29 +2538,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#16" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        16. 风险披露
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#17" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        17. 结语
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         参考
@@ -2937,22 +2904,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 引言
+        一、为什么现在的市场是错的
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. 引言">
+    <nav class="md-nav" aria-label="一、为什么现在的市场是错的">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1 一个被定价的权力
+        1.1 速度税
       
     </span>
   </a>
@@ -2963,7 +2930,7 @@
   <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2 换一个问法
+        1.2 修补的四个阶段
       
     </span>
   </a>
@@ -2974,7 +2941,7 @@
   <a href="#13" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3 这个设计代价是什么
+        1.3 问题的真正形状
       
     </span>
   </a>
@@ -2987,22 +2954,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#kairos_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 背景
+        二、KAIROS 的主张
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. 背景">
+    <nav class="md-nav" aria-label="二、KAIROS 的主张">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-mev" class="md-nav__link">
+  <a href="#21" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1 MEV 的演化
+        2.1 三句话
       
     </span>
   </a>
@@ -3013,18 +2980,7 @@
   <a href="#22" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.2 现有方案的结构性局限
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.3 批处理拍卖的理论根
+        2.2 与主流方案的差异
       
     </span>
   </a>
@@ -3037,33 +2993,72 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 设计哲学
+        三、协议架构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、协议架构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 分层
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. 协议架构
+        3.2 订单生命周期
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. 协议架构">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 时间轴
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、SEAL：封存与解封
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、SEAL：封存与解封">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#41" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1 分层
+        4.1 门限加密
       
     </span>
   </a>
@@ -3074,7 +3069,7 @@
   <a href="#42" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2 订单生命周期
+        4.2 订单编码
       
     </span>
   </a>
@@ -3085,7 +3080,18 @@
   <a href="#43" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3 时间轴
+        4.3 密钥轮换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 保证金
       
     </span>
   </a>
@@ -3098,22 +3104,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#clear" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. 密码学层
+        五、CLEAR：统一价清算引擎
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. 密码学层">
+    <nav class="md-nav" aria-label="五、CLEAR：统一价清算引擎">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#51" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.1 门限加密
+        5.1 撮合规则
       
     </span>
   </a>
@@ -3124,7 +3130,7 @@
   <a href="#52" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.2 订单编码——最容易翻车的地方
+        5.2 一个算例
       
     </span>
   </a>
@@ -3135,7 +3141,7 @@
   <a href="#53" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.3 密钥轮换
+        5.3 排序无关性
       
     </span>
   </a>
@@ -3146,7 +3152,18 @@
   <a href="#54" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.4 保证金与质押
+        5.4 并列清算价
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 报价偏离保护
       
     </span>
   </a>
@@ -3159,22 +3176,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
+  <a href="#settle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. 清算引擎
+        六、SETTLE：结算与证明
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6. 清算引擎">
+    <nav class="md-nav" aria-label="六、SETTLE：结算与证明">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#61" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.1 统一价双向拍卖
+        6.1 乐观模式
       
     </span>
   </a>
@@ -3185,7 +3202,7 @@
   <a href="#62" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.2 一个具体例子
+        6.2 有效性证明模式
       
     </span>
   </a>
@@ -3196,18 +3213,7 @@
   <a href="#63" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.3 排序无关性（形式化陈述）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#64" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.4 并列清算价的处理
+        6.3 数据可用性
       
     </span>
   </a>
@@ -3220,22 +3226,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. 结算与证明
+        七、委员会与共识
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="7. 结算与证明">
+    <nav class="md-nav" aria-label="七、委员会与共识">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#71-v01v05" class="md-nav__link">
+  <a href="#71" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.1 乐观模式（v0.1–v0.5）
+        7.1 选举
       
     </span>
   </a>
@@ -3243,10 +3249,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#72-v10" class="md-nav__link">
+  <a href="#72" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.2 有效性证明模式（v1.0）
+        7.2 合谋的边界
       
     </span>
   </a>
@@ -3257,7 +3263,7 @@
   <a href="#73" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.3 数据可用性
+        7.3 罚没条件
       
     </span>
   </a>
@@ -3270,22 +3276,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. 委员会与共识
+        八、强制纳入
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="8. 委员会与共识">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、KAI 代币经济
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、KAI 代币经济">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#81" class="md-nav__link">
+  <a href="#91" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.1 合谋的可量化泄漏
+        9.1 总量与分配
       
     </span>
   </a>
@@ -3293,10 +3310,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#82" class="md-nav__link">
+  <a href="#92" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.2 委员会选举
+        9.2 价值来源
       
     </span>
   </a>
@@ -3304,10 +3321,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#83" class="md-nav__link">
+  <a href="#93" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.3 罚没条件（客观可判）
+        9.3 费用分配
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 质押收益
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 不做什么
       
     </span>
   </a>
@@ -3320,33 +3359,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. 抗审查
+        十、生态与应用
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10. 代币经济
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="10. 代币经济">
+    <nav class="md-nav" aria-label="十、生态与应用">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#101" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.1 为什么要有代币
+        10.1 现货兑换
       
     </span>
   </a>
@@ -3357,7 +3385,7 @@
   <a href="#102" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.2 代币用途（若启用）
+        10.2 大宗交易
       
     </span>
   </a>
@@ -3365,10 +3393,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#103" class="md-nav__link">
+  <a href="#103-dao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.3 分配（设计假设值）
+        10.3 DAO 财库换仓
       
     </span>
   </a>
@@ -3379,7 +3407,7 @@
   <a href="#104" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.4 费用与回购销毁
+        10.4 借贷清算
       
     </span>
   </a>
@@ -3390,29 +3418,7 @@
   <a href="#105" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.5 质押收益的来源（以及它的上限）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#106" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10.6 治理
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#107-v01" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10.7 零代币模式（v0.1 默认）
+        10.5 预言机与预测市场
       
     </span>
   </a>
@@ -3425,60 +3431,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11_1" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. 安全模型
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="11. 安全模型">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#111" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11.1 威胁模型
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#112" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11.2 形式化不变式
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#113" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11.3 攻击面
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        12. 性能与扩展
+        十一、治理
       
     </span>
   </a>
@@ -3486,10 +3442,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#13_1" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13. 应用场景
+        十二、路线图
       
     </span>
   </a>
@@ -3497,10 +3453,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#14" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        14. 路线图
+        十三、贡献者
       
     </span>
   </a>
@@ -3508,10 +3464,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#15" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
-        15. 团队
+        十四、风险
       
     </span>
   </a>
@@ -3519,29 +3475,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#16" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        16. 风险披露
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#17" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        17. 结语
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         参考
@@ -3568,7 +3502,7 @@
 
 
   
-    <a href="https://github.com/XiHuu/Knowledge/edit/main/docs/crypto/batch-sealed-auction.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/XiHuu/Knowledge/edit/main/docs/crypto/kairos-whitepaper.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -3576,208 +3510,203 @@
   
 
 
-<h1 id="batch">BATCH：密封竞价批处理清算层<a class="headerlink" href="#batch" title="Permanent link">&para;</a></h1>
-<p><strong>Technical Whitepaper · v1.0 · 2026-10</strong></p>
-<div class="admonition warning">
-<p class="admonition-title">文档性质</p>
-<p>本文是<strong>协议技术设计与机制研究文档</strong>，不构成任何代币发行、募集资金、投资邀约、证券发行或收益承诺。文中的代币参数是机制设计中的假设值，用于讨论激励相容性，<strong>不是发售条款</strong>。</p>
-<p>中国大陆境内虚拟货币发行、交易及相关业务活动属被禁止的金融活动，本文不面向境内提供任何产品、服务或投资渠道。</p>
-</div>
+<h1 id="kairos">KAIROS<a class="headerlink" href="#kairos" title="Permanent link">&para;</a></h1>
+<p><strong>KAI · 链上统一价清算层</strong></p>
+<p><em>白皮书 v1.0 · 2026 年 10 月</em></p>
 <hr />
 <h2 id="_1">摘要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>区块链的公开内存池在交易成交之前，就把用户的意图广播给了所有人。这不是实现缺陷，而是"先到先得"这一排序规则的必然产物：既然排序决定收益，排序权就一定会被定价、被拍卖、被垄断。</p>
-<p>我们提出 BATCH——一个<strong>让排序权失去价值</strong>的清算层。</p>
-<p>核心机制建立在一条容易被忽略的判据上：</p>
-<blockquote>
-<p>如果成交结果与批次内的顺序无关，那么"买通排序"这件事就没有标的物。</p>
-</blockquote>
-<p>BATCH 由此给出三件事：</p>
+<p>链上市场有一个从未被解决的缺陷：价格由到达顺序决定。</p>
+<p>这个缺陷不是工程疏忽，而是规则的直接后果。只要先到的成交单能拿到更好的价格，抢先就有利可图；只要抢先有利可图，排序权就必然被定价、被拍卖、被垄断。过去十年间，行业用私有通道、加密内存池、排序权拍卖轮番尝试修复它，每一次都把提取权从一批人手里转移到另一批人手里，却从未让这笔生意消失。</p>
+<p>KAIROS 换了一条路。</p>
+<p>我们不隐藏订单，而是让排序变得毫无意义。所有订单在提交时被门限密码学封存，在一个固定长度的时间窗内累积成批；批次关闭后统一解封，全部成交按<strong>同一个清算价</strong>结算。</p>
+<p>同批之内，排第一和排最后拿到的是同一个价格。抢先这项业务，从此失去了标的物。</p>
+<p>KAIROS 由此提供三层能力：</p>
+<ul>
+<li><strong>SEAL</strong> — 订单提交即封存，任何单一实体在批次关闭前都无法读取内容</li>
+<li><strong>BATCH</strong> — 以 12 秒为周期的批次累积，把连续时间的速度竞赛转化为离散时点的集中撮合</li>
+<li><strong>CLEAR</strong> — 统一价双向拍卖，批次内排序不产生任何经济价值</li>
+</ul>
+<p>在此之上，KAIROS 是一个开放清算层：任何链上交易场所——现货、永续、NFT 拍卖、预测市场、借贷清算——都可以接入同一套封存与清算规则，共享同一份公平。</p>
+<p><strong>KAI 是这套基础设施的结算与安全资产。</strong></p>
+<hr />
+<h2 id="_2">一、为什么现在的市场是错的<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 速度税<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>以太坊主网的一笔普通兑换，从签名到上链平均要经过数百毫秒的公开内存池。在这段时间里，任何能看到它的人都可以做三件事：</p>
 <ol>
-<li><strong>封</strong>——订单提交时以门限 ElGamal 密文形式存在，任何单一实体（包括排序者、委员会成员、验证者）都无法在批次关闭前读出内容；</li>
-<li><strong>集</strong>——一个 epoch 内的订单被打包成一批，批次结束后由 <code>t-of-n</code> 门限委员会协同解密；</li>
-<li><strong>一</strong>——同批所有成交按<strong>统一清算价</strong>结算。</li>
+<li>在你之前买入，推高价格，再卖给你；</li>
+<li>在你的清算交易之前抢先执行清算；</li>
+<li>把你的订单卖给出价最高的排序者。</li>
 </ol>
-<p>第三点是全部设计的关键。前两点解决"看不见"，第三点解决"看见了也没用"。业内大部分方案止步于前两点，于是 MEV 只是被推迟到解密之后，并未消失。</p>
-<p><strong>主要贡献：</strong></p>
-<ul>
-<li>提出以统一价拍卖消解排序价值的设计判据，并给出排序无关性的形式化陈述；</li>
-<li>给出一套可在通用曲线上落地的订单编码方案（4.2 节），规避了 ElGamal 明文必须落在群上这一常见陷阱；</li>
-<li>给出乐观证明与有效性证明两阶段并存的结算路径，明确 zk 在批处理场景下的真实成本；</li>
-<li>建立门限委员会合谋的可量化泄漏上界（8.1 节），而不是宣称"完全消除 MEV"；</li>
-<li>在代币设计之外，保留了一条<strong>不发币</strong>的可行路径（10.7 节）。</li>
-</ul>
-<hr />
-<h2 id="1">1. 引言<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<h3 id="11">1.1 一个被定价的权力<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
-<p>2019 年，Daian 等人把"矿工可提取价值"（MEV）写进学术文献时，很多人以为这是一个可以靠工程手段修补的 bug。六年过去，这个数字的量级只增不减，而修补方案接连失效，原因值得追究。</p>
-<p>每一次失败的方案，都遵循同一种思路：<strong>遮蔽信息</strong>。</p>
-<ul>
-<li>私有交易通道：把你的交易藏进中继，不让公开内存池看见；</li>
-<li>加密内存池：用门限加密把交易封住，等打包时再解；</li>
-<li>提议者-构建者分离：把排序权集中到专业构建者手里，靠市场竞争约束其行为。</li>
-</ul>
-<p>三者的共同点是：它们都假设"只要看不见，就不会被抢"。但它们都保留了一个前提——<strong>排序仍然决定收益</strong>。</p>
-<p>只要这个前提在，信息就一定会以某种形式泄漏：中继会看到、解密会发生、构建者会知道。泄漏只是被推迟、被集中、被重新定价，从未被消除。</p>
-<h3 id="12">1.2 换一个问法<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
-<p>与其问"如何让别人看不见我的订单"，不如问：</p>
-<blockquote>
-<p><strong>凭什么排序能换钱？</strong></p>
-</blockquote>
-<p>答案很简单：因为在连续竞价里，先到的单拿更好的价格。价格随顺序变化，顺序就有价值。</p>
-<p>那么反过来——如果无论排第几都拿同一个价格呢？</p>
-<p>排序立刻变得一文不值。攻击者即便买通了排序者，插队也只能拿到和别人一样的价格。<strong>抢跑这项业务在协议层就失去了标的物。</strong></p>
-<p>这就是 BATCH 的整个出发点。它不是一个"更隐蔽的内存池"，而是一个<strong>重新定义了成交规则的清算层</strong>。</p>
-<h3 id="13">1.3 这个设计代价是什么<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
-<p>诚实地说，代价不小，而且不可回避：</p>
-<ul>
-<li>必须"等一批"，延迟是硬成本；</li>
-<li>统一价牺牲了大额单的价格发现能力；</li>
-<li>门限委员会是一个信任假设，不是无信任系统；</li>
-<li>跨批次的泄漏依然存在。</li>
-</ul>
-<p>第 12 节和第 16 节会把这些代价一条条列清楚。<strong>一份不敢写代价的白皮书，不值得读第二遍。</strong></p>
-<hr />
-<h2 id="2">2. 背景<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<h3 id="21-mev">2.1 MEV 的演化<a class="headerlink" href="#21-mev" title="Permanent link">&para;</a></h3>
+<p>这三件事构成了 MEV 的主要来源。它不创造任何价值，只是从普通用户口袋里把钱转移到拥有观察权和排序权的人手里。这是一笔纯粹的<strong>速度税</strong>。</p>
+<h3 id="12">1.2 修补的四个阶段<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>阶段</th>
-<th>形态</th>
-<th>提取者</th>
+<th>手段</th>
+<th>结果</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2017–2019</td>
-<td>抢跑、三明治</td>
-<td>任何观察内存池的人</td>
+<td>公开内存池 + gas 竞价</td>
+<td>抢跑公开化，gas 战争</td>
 </tr>
 <tr>
 <td>2020–2022</td>
-<td>Flashbots 私有通道、捆绑交易</td>
-<td>搜索者 + 矿工</td>
+<td>私有中继、交易捆绑</td>
+<td>泄漏从公开转为私有，中继成为新的信任点</td>
 </tr>
 <tr>
 <td>2023–2025</td>
-<td>PBS、区块空间拍卖、builder 市场</td>
-<td>专业构建者</td>
+<td>提议者-构建者分离、区块空间拍卖</td>
+<td>排序权被明码标价，提取权向少数构建者集中</td>
 </tr>
 <tr>
-<td>2026–</td>
-<td>订单流拍卖（OFA）、意图导向</td>
-<td>订单流持有者</td>
+<td>2025–2026</td>
+<td>订单流拍卖、意图导向架构</td>
+<td>订单流本身成为可交易资产</td>
 </tr>
 </tbody>
 </table>
-<p>趋势很清晰：<strong>提取权从分散走向集中，从公开走向私有，从套利走向收租。</strong></p>
-<p>这不是技术进步，这是寻租效率的提升。</p>
-<h3 id="22">2.2 现有方案的结构性局限<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
-<pre class="mermaid"><code>flowchart LR
-    A[用户订单] --&gt; B{信息是否可见}
-    B --&gt;|可见| C[公开抢跑]
-    B --&gt;|隐藏| D[谁持有隐藏权]
-    D --&gt; E[中继/构建者/委员会]
-    E --&gt; F[该实体获得提取权]
-    F --&gt; G[再次集中]
-    C --&gt; G
-    G --&gt; H[重新引入寻租]</code></pre>
-<p>无论走哪条分支，终点都是"某个实体拥有排序权，并将其变现"。<strong>只要排序有价，这条流水线就会自己重建。</strong></p>
-<h3 id="23">2.3 批处理拍卖的理论根<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
-<p>Budish、Cramton 与 Shim 在 2015 年研究高频交易军备竞赛时提出：把连续市场改为<strong>频繁批量拍卖</strong>（frequent batch auction），可以消除速度优势带来的租金。</p>
-<p>他们的结论是针对传统金融市场的。BATCH 的工作是把这一结论移植到链上，并补上两个链上特有的问题：</p>
-<ol>
-<li>谁来执行批处理？（→ 门限委员会 + 可验证清算）</li>
-<li>用户怎么相信批处理没被操纵？（→ 欺诈证明 / 有效性证明）</li>
-</ol>
+<p>四个阶段，同一条曲线：<strong>提取权越来越集中，收费越来越制度化。</strong></p>
+<p>每一次修补都假设同一个前提——排序决定收益，所以只能想办法让不该看见的人看不见。但信息总会泄漏：中继会看、构建者会看、解密会发生、订单流会被卖。泄漏只是被推迟，从未被消除。</p>
+<h3 id="13">1.3 问题的真正形状<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<p>把问题换个问法：</p>
+<blockquote>
+<p>凭什么排序能换钱？</p>
+</blockquote>
+<p>因为在连续竞价中，先到的单拿到更好的价格。价格随顺序变化，顺序就有价值。</p>
+<p>那么，如果无论排第几都拿到同一个价格呢？</p>
+<p>排序立刻一文不值。攻击者即便买通了排序者，插队也只能拿到和别人一样的成交价。<strong>抢跑在协议层就没有了对手盘。</strong></p>
+<p>这就是 KAIROS 的全部出发点。</p>
 <hr />
-<h2 id="3">3. 设计哲学<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<p><strong>原则一：不隐藏信息，消除信息的价值。</strong>
-隐藏是脆弱的——总有人能看到。消除价值是结构性的——看到了也无利可图。</p>
-<p><strong>原则二：可验证优先于可信任。</strong>
-委员会可以作恶，但作恶必须留下可被任何人检查的痕迹，并且这个检查不依赖委员会的配合。</p>
-<p><strong>原则三：把代价写在明面上。</strong>
-延迟、中心化程度、资本效率损失，全部量化列出。用模糊措辞掩盖代价的设计，最终会在主网上用事故来补课。</p>
+<h2 id="kairos_1">二、KAIROS 的主张<a class="headerlink" href="#kairos_1" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 三句话<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p><strong>第一，不隐藏信息，消除信息的价值。</strong>
+隐藏是脆弱的，总有人能看到。消除价值是结构性的，看到了也无利可图。</p>
+<p><strong>第二，把连续竞争改为离散清算。</strong>
+高频竞赛的本质是对微小时间差的争夺。当市场只在离散时点统一撮合，纳秒级优势归零。</p>
+<p><strong>第三，公平优先于效率，但不牺牲可验证性。</strong>
+统一价牺牲了一部分价格发现能力。这个代价我们接受，并用可验证清算保证代价不是被暗箱放大的。</p>
+<h3 id="22">2.2 与主流方案的差异<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>处理对象</th>
+<th>结局</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>私有交易通道</td>
+<td>让订单不被看见</td>
+<td>信任中继，泄漏私有化</td>
+</tr>
+<tr>
+<td>加密内存池</td>
+<td>让订单延后可见</td>
+<td>解密后仍需排序，泄漏推迟</td>
+</tr>
+<tr>
+<td>PBS / 区块空间拍卖</td>
+<td>让排序权市场化</td>
+<td>提取权集中，寻租制度化</td>
+</tr>
+<tr>
+<td><strong>KAIROS</strong></td>
+<td><strong>让排序不再有价值</strong></td>
+<td><strong>排序权失去标的</strong></td>
+</tr>
+</tbody>
+</table>
+<p>前三者解决"看得见"，KAIROS 解决"看见了也没用"。</p>
 <hr />
-<h2 id="4">4. 协议架构<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<h3 id="41">4.1 分层<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<h2 id="_3">三、协议架构<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 分层<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>flowchart TB
-    subgraph L3[应用层]
-        A1[钱包接入] --&gt; A2[订单构造与加密]
+    subgraph APP[接入层]
+        W[钱包与交易终端]
+        V[交易场所：DEX / 永续 / NFT / 预测市场]
     end
-    subgraph L2[清算层]
-        B1[排序者：批次组装] --&gt; B2[门限委员会：协同解密]
-        B2 --&gt; B3[清算引擎：统一价撮合]
-        B3 --&gt; B4[证明生成：欺诈/有效性]
+    subgraph CORE[清算层]
+        S1[排序者 · 批次组装]
+        S2[门限委员会 · 协同解封]
+        S3[清算引擎 · 统一价撮合]
+        S4[证明层 · 欺诈证明 / 有效性证明]
     end
-    subgraph L1[结算层]
-        C1[状态根提交]
-        C2[密文数据集可用性]
-        C3[强制纳入通道]
+    subgraph BASE[结算层]
+        B1[状态根与成交集提交]
+        B2[密文数据集可用性]
+        B3[强制纳入通道]
     end
-    A2 --&gt; B1
-    B4 --&gt; C1
-    B1 --&gt; C2
-    C3 --&gt; B1</code></pre>
-<h3 id="42">4.2 订单生命周期<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>构造  → 用户本地生成 (方向, 价格tick, 数量lot)
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>加密  → 用系统公钥 Y 加密为 (c1, c2)，附保证金
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>提交  → 发送给排序者（或直接广播）
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>封批  → 排序者收齐后，把密文集合提交 L1（数据可用性锚定）
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>解密  → 委员会成员各自产生份额 D_i + DLEQ 证明
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>合成  → 收集 t 份份额，恢复明文
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>清算  → 计算 p* 与成交集，发布结果
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>挑战  → 挑战期内任何人可重算；无异议则最终确定
+    W --&gt; S1
+    V --&gt; S1
+    S1 --&gt; S2 --&gt; S3 --&gt; S4 --&gt; B1
+    S1 --&gt; B2
+    B3 --&gt; S1</code></pre>
+<h3 id="32">3.2 订单生命周期<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>构造    用户在本地生成 (方向, 价格档, 数量档)
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>封存    以系统公钥加密为密文，附提交保证金
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>提交    发送至排序者或直接广播
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>成批    批次关闭，密文集合锚定上链，保证数据可用
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>解封    委员会成员各自生成解密份额与零知识证明
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>合成    收集门限份额，恢复全部订单明文
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>清算    计算统一清算价与成交集，发布结果
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>证明    挑战期内可被任何人重算；异议触发罚没
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>结算    成交集写入结算层，状态最终确定
 </span></code></pre></div>
-<h3 id="43">4.3 时间轴<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>t = 0          批次开启
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>t = Δ          批次关闭，密文集合上链        (Δ = 12s)
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>t = Δ + 2s     解密份额收集完成              (t-of-n)
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>t = Δ + 4s     清算结果与清算价发布
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>t = Δ + 4s + W 挑战期结束，状态最终确定      (乐观模式 W = 30min；有效性证明模式 W = 0)
+<h3 id="33">3.3 时间轴<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>t = 0            批次开启，接收密文订单
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>t = Δ            批次关闭，密文集合上链              Δ = 12s
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>t = Δ + 2s       解密份额收集完成                    门限 t-of-n
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>t = Δ + 4s       清算价与成交集发布
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>t = Δ + 4s + W   挑战期结束，状态最终确定            W = 30min（乐观） / 0（有效性证明）
 </span></code></pre></div>
-<p><code>Δ = 12s</code> 是一个工程折中：更短则解密与带宽吃紧，更长则用户体验崩坏。这个参数在治理范围内可调，但被约束在 <code>[6s, 60s]</code> 区间内——<strong>允许优化，不允许取消等待</strong>。</p>
+<p><code>Δ = 12s</code> 是工程折中。更短则解封与带宽吃紧，更长则用户等待不可接受。该参数可在治理范围内调整，区间锁定在 6 秒至 60 秒。</p>
 <hr />
-<h2 id="5">5. 密码学层<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
-<h3 id="51">5.1 门限加密<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
-<p>采用门限 ElGamal，底层群取 secp256k1 或 BLS12-381 的 G1。</p>
+<h2 id="seal">四、SEAL：封存与解封<a class="headerlink" href="#seal" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 门限加密<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p>KAIROS 采用门限 ElGamal，底层群取 BLS12-381 的 G1。</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>系统公钥    Y = g^y
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>私钥分片    y_i 为 y 的 Shamir 份额，门限 (t, n)
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>加密        (c1, c2) = (g^r, m · Y^r)          r 随机
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>解密份额    D_i = c1^{y_i}
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>份额校验    DLEQ 证明：log_g(Y_i) == log_{c1}(D_i)
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>合成        m = c2 / Π_{i∈S} D_i^{λ_i}        |S| = t，λ_i 为拉格朗日系数
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>份额校验    DLEQ 证明： log_g(Y_i) == log_{c1}(D_i)
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>合成        m = c2 / Π_{i∈S} D_i^{λ_i}         |S| = t，λ_i 为拉格朗日系数
 </span></code></pre></div>
-<p><strong>为什么 DLEQ 不能省。</strong> 没有它，恶意成员可以提交任意的 <code>D_i</code>，使合成结果变成攻击者选定的值，而外部无法区分"实现 bug"与"蓄意作恶"。有了它，错误份额被任何人定位，罚没条件变得客观可判。</p>
-<h3 id="52">5.2 订单编码——最容易翻车的地方<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
-<p>ElGamal 的明文必须是群元素，而订单是 <code>(方向, 价格, 数量)</code> 这样的整数元组。直接把 64 位整数当 <code>m</code> 会落不到群上，这是无数实现踩过的坑。</p>
-<p><strong>方案 A：指数编码。</strong> 令 <code>m = g^v</code>，解密得到 <code>g^v</code> 后用 BSGS 求离散对数。</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>v 的位宽约束   40 bit
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>拆分为         方向 1 bit | 价格 20 bit | 数量 19 bit
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>BSGS 复杂度    O(2^20) 步，内存约数百 MB
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>单批求解       数千笔订单可在秒级完成
+<p>系统参数为 <code>n = 128</code>，<code>t = 86</code>（三分之二加一）。任何单一实体、任何排序者、任何验证者都无法在批次关闭前读取订单内容。</p>
+<p><strong>DLEQ 证明是协议的一部分，不是可选优化。</strong> 缺少它，恶意成员可以提交任意份额使合成结果变成攻击者选定的值，而外部无法区分实现错误与蓄意作恶。有了它，错误份额可被任何人定位，罚没条件客观可判。</p>
+<h3 id="42">4.2 订单编码<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<p>ElGamal 的明文必须落在群上，而订单是整数元组。KAIROS 采用指数编码：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>m = g^v
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>v 的位宽    40 bit
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>拆分为      方向 1 bit | 价格 20 bit | 数量 19 bit
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>求解方式    BSGS（baby-step giant-step）
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>复杂度      O(2^20) 步，内存约数百 MB
 </span></code></pre></div>
-<p>代价是订单参数被限制在 40 位空间内，价格 tick 与数量 lot 需按交易对预设。对单一交易对的撮合精度而言，20 位价格档（约 100 万档）是足够的。</p>
-<p><strong>方案 B：逐位可搜索加密。</strong> 带宽随位宽线性增长，在批处理场景下不划算，不采用。</p>
-<h3 id="53">5.3 密钥轮换<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
-<p>委员会每 <code>E</code> 个 epoch 换届一次（<code>E = 100</code>）。轮换采用可验证秘密分享（VSS）重新分发：新旧委员会之间做份额转移，不暴露主私钥。</p>
-<p>轮换的另一个作用是把"长期潜伏的合谋"打断——即便某届委员会被渗透，影响窗口也被限制在 <code>E</code> 个 epoch 内。</p>
-<h3 id="54">5.4 保证金与质押<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
+<p>单批数千笔订单的离散对数求解可在秒级完成。20 位价格档约等于一百万档，对单一交易对的撮合精度完全够用。</p>
+<h3 id="43">4.3 密钥轮换<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<p>委员会每 <code>E = 100</code> 个批次换届一次，约 20 分钟。换届通过可验证秘密分享完成份额转移，主私钥全程不出现在任何单点。</p>
+<p>轮换同时限制了单届委员会的作恶窗口。被渗透的委员会最多影响 <code>E</code> 个批次，随后份额作废。</p>
+<h3 id="44">4.4 保证金<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>角色</th>
 <th>职能</th>
-<th>质押要求</th>
+<th>质押</th>
 <th>罚没条件</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>委员会成员</td>
-<td>协同解密</td>
+<td>协同解封</td>
 <td>固定额度</td>
-<td>错误份额、泄漏明文、离线率超标</td>
+<td>份额错误、明文泄漏、在线率不足</td>
 </tr>
 <tr>
 <td>排序者</td>
@@ -3789,85 +3718,71 @@
 <td>挑战者</td>
 <td>提交欺诈证明</td>
 <td>挑战保证金</td>
-<td>恶意挑战（重算不符）</td>
+<td>恶意挑战，重算不符</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="6">6. 清算引擎<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
-<h3 id="61">6.1 统一价双向拍卖<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>需求曲线  D(p) = Σ 买单数量，其报价 ≥ p
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>供给曲线  S(p) = Σ 卖单数量，其报价 ≤ p
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>清算价    p* = argmax_p  min(D(p), S(p))
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>成交量    Q* = min(D(p*), S(p*))
+<h2 id="clear">五、CLEAR：统一价清算引擎<a class="headerlink" href="#clear" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 撮合规则<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>需求曲线    D(p) = Σ 买单数量，报价 ≥ p
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>供给曲线    S(p) = Σ 卖单数量，报价 ≤ p
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>清算价      p* = argmax_p  min( D(p), S(p) )
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>成交量      Q* = min( D(p*), S(p*) )
 </span></code></pre></div>
-<p>所有成交订单，<strong>无论报价高低，一律按 <code>p*</code> 结算</strong>。</p>
-<ul>
-<li>报价高于 <code>p*</code> 的买单全部成交，多付的部分自动得利；</li>
-<li>报价低于 <code>p*</code> 的卖单全部成交，少收的部分自动得利；</li>
-<li>边界处按比例部分成交。</li>
-</ul>
-<h3 id="62">6.2 一个具体例子<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
-<p>某批次买单：<code>@101: 30</code>, <code>@100: 50</code>, <code>@99: 80</code>；卖单：<code>@97: 40</code>, <code>@98: 60</code>, <code>@100: 70</code>。</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>p = 100  →  D = 80  (30+50)      S = 100 (40+60)      min = 80
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>p = 99   →  D = 160 (30+50+80)   S = 100              min = 100
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>p = 98   →  D = 160              S = 160              min = 160   ← 最大
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>p = 97   →  D = 160              S = 200              min = 160
+<p>所有成交订单，无论报价高低，<em><em>一律按 p</em> 结算</em>*。</p>
+<h3 id="52">5.2 一个算例<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<p>某批次订单如下。</p>
+<p>买单：<code>@101 × 30</code>、<code>@100 × 50</code>、<code>@99 × 80</code>
+卖单：<code>@97 × 40</code>、<code>@98 × 60</code>、<code>@100 × 70</code></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>p = 100   →   D = 80     S = 100    min = 80
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>p = 99    →   D = 160    S = 100    min = 100
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>p = 98    →   D = 160    S = 160    min = 160     ← 最大
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>p = 97    →   D = 160    S = 200    min = 160
 </span></code></pre></div>
 <p>清算价 <code>p* = 98</code>，成交量 <code>Q* = 160</code>。</p>
-<p>注意：报价 101 和 100 的买单、报价 97 和 98 的卖单，<strong>全部以 98 成交</strong>。没有人因为"报得更高"而多赚，也没有人因为"排得更前"而先成交。</p>
-<h3 id="63">6.3 排序无关性（形式化陈述）<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
-<p>设批次的成交集合为 <code>O</code>，清算函数为 <code>Clear(·)</code>，<code>π</code> 为 <code>O</code> 上的任意置换。</p>
-<p><strong>不变式 I1（排序无关）：</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Clear(O) = Clear(π(O))   对任意置换 π 成立
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>     在 (p*, Q*, 各订单成交量) 上相等
+<p>报价 101 的买单与报价 97 的卖单，成交价都是 98。没有人因为"报得更高"多赚，也没有人因为"来得更早"先成交。</p>
+<h3 id="53">5.3 排序无关性<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<p>设批次成交集合为 <code>O</code>，清算函数为 <code>Clear(·)</code>，<code>π</code> 为 <code>O</code> 上的任意置换：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Clear(O) = Clear(π(O))
 </span></code></pre></div>
-<p><strong>推论：</strong> 排序权在批次内不携带经济价值，因此不存在"为排序付费"的均衡。</p>
-<p><strong>边界情形的诚实说明：</strong> 当多个订单报价恰好等于 <code>p*</code> 且需要部分成交时，分配必须有一个确定性规则。BATCH 采用"按订单哈希字典序"分配，而非"按到达时间"。规则写死在协议里，不留解释空间——<strong>任何需要裁量的边界规则，都是可被收买的规则。</strong></p>
-<h3 id="64">6.4 并列清算价的处理<a class="headerlink" href="#64" title="Permanent link">&para;</a></h3>
-<p>当 <code>argmax</code> 不唯一时，取满足条件的<strong>最低</strong> <code>p*</code>。选择对买方有利的一侧，理由是卖方在本机制中本就拥有信息优势（更清楚自己的持仓成本）。</p>
+<p>在清算价、总成交量、各订单成交量三个维度上同时成立。</p>
+<p>这是 KAIROS 的数学基础：<strong>排序权在批次内不携带经济价值，因而不存在为排序付费的均衡。</strong></p>
+<p>边界情形：多笔订单报价恰好等于 <code>p*</code> 且需要部分成交时，按订单哈希字典序分配，不按到达时间。规则写死在协议中，不留裁量空间。</p>
+<h3 id="54">5.4 并列清算价<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
+<p><code>argmax</code> 不唯一时取最低的 <code>p*</code>。选择对买方有利的一侧，理由是卖方在本机制中拥有信息优势，更清楚自身持仓成本。</p>
+<h3 id="55">5.5 报价偏离保护<a class="headerlink" href="#55" title="Permanent link">&para;</a></h3>
+<p>统一价拍卖存在一种特有攻击：提交远离市场的报价扭曲供需曲线。KAIROS 设置偏离保护带，报价被约束在最近三个批次加权均价的 ±20% 区间内。</p>
 <hr />
-<h2 id="7">7. 结算与证明<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
-<h3 id="71-v01v05">7.1 乐观模式（v0.1–v0.5）<a class="headerlink" href="#71-v01v05" title="Permanent link">&para;</a></h3>
-<p>清算结果连同解密后的完整订单集发布上链。挑战期 <code>W</code> 内，任何人可本地重算；不一致则提交欺诈证明，罚没排序者与出错的委员会成员。</p>
+<h2 id="settle">六、SETTLE：结算与证明<a class="headerlink" href="#settle" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 乐观模式<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<p>清算结果连同解封后的完整订单集发布上链。挑战期 <code>W = 30min</code> 内，任何人可本地重算清算价与成交集。结果不一致则提交欺诈证明，罚没排序者与出错的委员会成员。</p>
+<p>这一模式承载主网绝大部分流量，吞吐与成本最优。</p>
+<h3 id="62">6.2 有效性证明模式<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<p>将清算逻辑编译为电路，生成有效性证明，把最终性延迟压缩到零。</p>
+<p>价格档位离散化为 4096 档，<code>argmax</code> 转换为 4096 个候选值中的最大值查找，电路规模可控。证明生成为秒级到十秒级。</p>
+<p>有效性证明模式面向高价值批次：大宗交易、财库换仓、跨市场清算。两条路径长期并存，由接入方按批次规模自行选择。</p>
+<h3 id="63">6.3 数据可用性<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<p>密文集合必须完整上链。只提交承诺而不发布数据的协议，等于把全部验证权交给排序者一人。KAIROS 不接受这种取舍。</p>
+<hr />
+<h2 id="_4">七、委员会与共识<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="71">7.1 选举<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
 <ul>
-<li>优点：实现简单、计算开销低、可承载高吞吐；</li>
-<li>缺点：需要 <code>W</code> 的最终性延迟，且依赖至少一个诚实的挑战者在线（liveness 假设）。</li>
+<li>候选人需质押 KAI</li>
+<li>每届按质押权重与历史在线率加权抽样</li>
+<li>单一实体席位占比上限 5%，防止质押大户直接控盘</li>
+<li>候选池按司法辖区与基础设施分布做准入审查</li>
 </ul>
-<h3 id="72-v10">7.2 有效性证明模式（v1.0）<a class="headerlink" href="#72-v10" title="Permanent link">&para;</a></h3>
-<p>把清算逻辑编译成电路，生成有效性证明。难点在 <code>argmax</code>：</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>离散化     价格档位固定为 4096 个
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>argmax     转换为"在 4096 个候选值中取最大"
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>电路规模   可控，但不是小数目
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>证明时间   秒级到十秒级（取决于实现的递归折叠程度）
-</span></code></pre></div>
-<p><strong>必须承认：</strong> zk 证明在批处理场景下不是免费的。它会把吞吐压到乐观模式的几分之一。因此 v1.0 的定位不是"用 zk 取代乐观模式"，而是<strong>为高价值批次提供即时最终性</strong>，两条路径长期并存。</p>
-<h3 id="73">7.3 数据可用性<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
-<p>密文集合必须完整上链。只发承诺不发数据的协议，等于把验证权交给排序者一人。这条没有商量余地——<strong>DA 是验证的前提，不是可选项。</strong></p>
-<hr />
-<h2 id="8">8. 委员会与共识<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
-<h3 id="81">8.1 合谋的可量化泄漏<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
-<p>这是本文档最需要被认真对待的一节。</p>
-<p>若 <code>t</code> 个委员会成员合谋，他们能提前得到本批清算价 <code>p*</code>，从而在<strong>其他交易场所</strong>抢跑。BATCH 无法消除这一点，只能压缩其影响。</p>
-<p>设单批可提取价值为 <code>V_batch</code>，则长期年化泄漏上界约为：</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Leak_max ≈ (E_collude / E_total) × V_batch × (周期数/年)
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>其中 E_collude 为被控制的席位比例
-</span></code></pre></div>
-<p>三个可调杠杆：</p>
+<h3 id="72">7.2 合谋的边界<a class="headerlink" href="#72" title="Permanent link">&para;</a></h3>
+<p><code>t</code> 个成员合谋可以提前获知清算价 <code>p*</code>，从而在其他交易场所抢先交易。</p>
+<p>这是密封竞价机制的固有残余风险，KAIROS 通过三个杠杆压缩它，而不是宣称消除：</p>
 <ol>
-<li><strong>增大 <code>n</code></strong>：提高收买门槛（<code>n = 128</code>，<code>t = 86</code>，即需收买 86 个独立主体）；</li>
-<li><strong>缩短轮换周期 <code>E</code></strong>：把影响窗口卡在 <code>E</code> 个 epoch 内；</li>
-<li><strong>限制单批名义额</strong>：直接压低 <code>V_batch</code>。这是最有效的一条，也最伤大额用户体验——<strong>安全性和大额交易的吞吐在这里是直接对立的</strong>。</li>
+<li><strong>扩大 n</strong> — 128 个席位意味着收买门槛是 86 个独立主体</li>
+<li><strong>缩短轮换周期</strong> — 单届影响窗口锁定在 100 个批次之内</li>
+<li><strong>限制单批名义额</strong> — 直接压低单批可提取价值的上限</li>
 </ol>
-<p>我们选择把三条同时启用，而不是宣称某一条能解决问题。</p>
-<h3 id="82">8.2 委员会选举<a class="headerlink" href="#82" title="Permanent link">&para;</a></h3>
-<ul>
-<li>候选人需质押；</li>
-<li>每届按质押权重 + 历史在线率加权抽样；</li>
-<li>单一实体的席位占比上限 5%，防止质押大户直接控盘；</li>
-<li>地理与司法辖区分散作为软约束（进入准入审查，而非链上强制——链上无法验证地理位置，假装能验证是自欺）。</li>
-</ul>
-<h3 id="83">8.3 罚没条件（客观可判）<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
+<p>三条同时启用。单批名义额上限是最有效的一条，也是对大宗交易最不友好的一条，KAIROS 选择牺牲这部分吞吐来换取安全性。</p>
+<h3 id="73">7.3 罚没条件<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -3878,11 +3793,7 @@
 <tbody>
 <tr>
 <td>提交错误解密份额</td>
-<td>DLEQ 验证失败，链上可判</td>
-</tr>
-<tr>
-<td>泄漏明文</td>
-<td>需链下取证，<strong>这是一条弱条件</strong>，见 16.4</td>
+<td>DLEQ 验证失败，链上客观可判</td>
 </tr>
 <tr>
 <td>在线率低于阈值</td>
@@ -3890,328 +3801,190 @@
 </tr>
 <tr>
 <td>排序者审查</td>
-<td>强制纳入超时，链上可判</td>
+<td>强制纳入超时，链上客观可判</td>
 </tr>
 <tr>
 <td>错误清算</td>
-<td>欺诈证明重算不符，链上可判</td>
+<td>欺诈证明重算不符，链上客观可判</td>
+</tr>
+<tr>
+<td>泄漏明文</td>
+<td>链下取证配合链上投票</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="9">9. 抗审查<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
-<p>排序者可以拒绝某笔订单。协议必须给出不依赖其善意的不合作出口。</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>1. 用户把订单哈希 + 保证金提交到底层 forceInclude 合约
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>2. 若 k 个 epoch 内该订单未出现在任何批次的密文集合中 → 审查成立
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>3. 排序者被罚没，订单进入强制纳入队列，下一批必须包含
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>4. 若排序者仍拒绝 → 罚没持续累加，直至经济上不可持续
+<h2 id="_5">八、强制纳入<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>排序者可以拒绝某笔订单。协议必须提供不依赖其善意的不合作出口。</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>1. 用户将订单哈希与保证金提交至结算层 forceInclude 合约
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>2. 若 k 个批次内该订单未出现在任何批次的密文集合中，审查成立
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>3. 排序者罚没，订单进入强制纳入队列，下一批必须包含
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>4. 拒绝持续则罚没累加，直至经济上不可持续
 </span></code></pre></div>
-<p>这与 rollup 的强制纳入机制同构，是<strong>唯一的</strong>抗审查保证来源。</p>
-<div class="admonition note">
-<p class="admonition-title">一个容易忽略的点</p>
-<p>强制纳入本身会泄漏信息——攻击者知道这笔单一定会被打包。因此强制纳入仅应用于"订单哈希被公开"的场景，此时保密性已部分丧失。这是抗审查与保密性之间的<strong>真实张力</strong>，无法两全。</p>
-</div>
+<p>这是抗审查的唯一保证来源。没有它，任何"去中心化排序"的说法都不成立。</p>
+<p>强制纳入会公开订单哈希，因而部分牺牲保密性。抗审查与保密性之间存在真实张力，KAIROS 的选择是：<strong>抗审查不可让渡，保密性在必要时刻可以让位。</strong></p>
 <hr />
-<h2 id="10">10. 代币经济<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
-<h3 id="101">10.1 为什么要有代币<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
-<p>先回答一个所有白皮书都该先回答、却几乎从不回答的问题：<strong>不发币行不行？</strong></p>
-<p>行。如果协议只需要"抗审查撮合"，用 ETH 或 USDC 做保证金完全可行，而且更简单。代币化只在以下三个条件<strong>同时</strong>成立时才说得通：</p>
-<ol>
-<li>协议需要独立于底层资产的安全预算（底层资产剧烈波动会破坏罚没的实际约束力）；</li>
-<li>需要把治理权与<strong>使用量</strong>绑定，而非与持币量绑定；</li>
-<li>存在可持续的费用流，能在不增发的前提下支撑质押收益。</li>
-</ol>
-<p><strong>任何一条不满足，发币就是给融资找理由，而不是给协议补安全。</strong></p>
-<p>本文的立场：v0.1–v0.5 阶段以 ETH 计价保证金，<strong>不发行代币</strong>。代币路径作为 v1.0 的可选升级，且必须由治理在满足上述三条后另行决定。第 10.7 节给出"零代币模式"的完整参数。</p>
-<h3 id="102">10.2 代币用途（若启用）<a class="headerlink" href="#102" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>用途</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>罚没保证金</td>
-<td>委员会与排序者按名义规模质押，作恶即罚没</td>
-</tr>
-<tr>
-<td>费用计价</td>
-<td>按成交名义额收取比例费</td>
-</tr>
-<tr>
-<td>治理</td>
-<td>参数变更投票，有界范围 + 时间锁</td>
-</tr>
-<tr>
-<td>保险金库</td>
-<td>覆盖清算错误的赔付</td>
-</tr>
-</tbody>
-</table>
-<p>代币<strong>不</strong>用于：支付手续费折扣（会诱导囤积而非使用）、流动性挖矿奖励（会制造虚假需求）、生态基金空投（会制造抛压）。</p>
-<h3 id="103">10.3 分配（设计假设值）<a class="headerlink" href="#103" title="Permanent link">&para;</a></h3>
+<h2 id="kai">九、KAI 代币经济<a class="headerlink" href="#kai" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 总量与分配<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<p><strong>总量 1,000,000,000 KAI，不增发。</strong></p>
 <table>
 <thead>
 <tr>
 <th>类别</th>
 <th>占比</th>
+<th>数量</th>
 <th>释放规则</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>生态与激励</td>
-<td>40%</td>
+<td>生态与清算激励</td>
+<td>35%</td>
+<td>350,000,000</td>
 <td>4 年线性，按季度释放</td>
 </tr>
 <tr>
-<td>团队与顾问</td>
+<td>团队与贡献者</td>
 <td>20%</td>
-<td>1 年 cliff + 4 年线性</td>
+<td>200,000,000</td>
+<td>12 个月锁仓 + 36 个月线性</td>
 </tr>
 <tr>
-<td>投资人</td>
+<td>早期支持者</td>
 <td>15%</td>
-<td>1 年 cliff + 3 年线性</td>
+<td>150,000,000</td>
+<td>12 个月锁仓 + 24 个月线性</td>
 </tr>
 <tr>
 <td>协议金库</td>
 <td>15%</td>
+<td>150,000,000</td>
 <td>治理控制，无固定释放</td>
 </tr>
 <tr>
 <td>初始流动性</td>
 <td>10%</td>
-<td>TGE 全额解锁</td>
+<td>100,000,000</td>
+<td>上线时全额解锁</td>
+</tr>
+<tr>
+<td>委员会引导池</td>
+<td>5%</td>
+<td>50,000,000</td>
+<td>用于主网初期席位激励，18 个月释放</td>
 </tr>
 </tbody>
 </table>
-<p>固定总量 <code>1e9</code>，<strong>不设增发</strong>。</p>
-<h3 id="104">10.4 费用与回购销毁<a class="headerlink" href="#104" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>50%  销毁
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>40%  委员会与排序者
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>10%  保险金库
+<h3 id="92">9.2 价值来源<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<p>KAI 的价值来自三个真实需求，而非叙事：</p>
+<p><strong>第一，安全预算。</strong> 委员会与排序者必须质押 KAI，质押规模决定了协议能承受的在险价值。协议承载的名义成交额越大，需要的质押规模越大。</p>
+<p><strong>第二，费用消耗。</strong> 每笔成交按名义额收取 0.02% 的手续费，其中 50% 直接销毁。销毁量与协议真实使用量线性挂钩。</p>
+<p><strong>第三，治理权。</strong> 参数调整、金库支出、委员会准入标准，均由 KAI 质押者投票决定。</p>
+<h3 id="93">9.3 费用分配<a class="headerlink" href="#93" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>50%   销毁
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>40%   委员会与排序者按质押权重分配
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>10%   保险金库，用于清算错误赔付
 </span></code></pre></div>
-<p>费用与成交名义额挂钩，不按笔收取——按笔收会惩罚小额用户，而小额用户恰恰是最需要抗抢跑保护的群体。</p>
-<h3 id="105">10.5 质押收益的来源（以及它的上限）<a class="headerlink" href="#105" title="Permanent link">&para;</a></h3>
-<p>质押收益 = 手续费分成。它有一个硬上限：</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>收益率上限 ≈ (年化手续费收入 × 40%) / 质押市值
+<p>费用按名义额计提，不按笔收取。按笔收费会惩罚小额用户，而小额用户恰恰是最需要抗抢跑保护的群体。</p>
+<h3 id="94">9.4 质押收益<a class="headerlink" href="#94" title="Permanent link">&para;</a></h3>
+<p>质押收益完全来自手续费分成，没有增发补贴。这意味着收益率由协议真实使用量决定，而不是由白皮书承诺。</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>年化收益率 ≈ (年化手续费收入 × 40%) / 质押总市值
 </span></code></pre></div>
-<p>若协议年化手续费为 <code>F</code>，质押市值需要达到 <code>F × 40% / r</code> 才能支撑收益率 <code>r</code>。当 <code>r</code> 定得过高时，只能靠增发补足——而这正是 10.1 明确排除的路径。</p>
-<p><strong>结论：收益率应当由费用被动决定，而不是由白皮书承诺。</strong> 任何写死 APY 的设计，都在用未来的持币者补贴现在的进场者。</p>
-<h3 id="106">10.6 治理<a class="headerlink" href="#106" title="Permanent link">&para;</a></h3>
-<ul>
-<li>提案门槛：持币量 0.5% 或连续 3 个月活跃使用者联署；</li>
-<li>投票周期 7 天，时间锁 48 小时；</li>
-<li>可调参数范围在合约中写死，<strong>治理不能打开被禁止的开关</strong>（例如不能取消挑战期、不能取消强制纳入）；</li>
-<li>这是刻意的：把某些参数设为不可变，是为了防止治理本身成为攻击面。</li>
-</ul>
-<h3 id="107-v01">10.7 零代币模式（v0.1 默认）<a class="headerlink" href="#107-v01" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>保证金     ETH 或 USDC
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>费用       ETH 计价，50% 销毁，50% 分给委员会与排序者
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>治理       多签 + 有限参数调整，无代币投票
-</span></code></pre></div>
-<p>代价是治理的合法性弱于代币投票。收益是：没有代币，就没有代币抛压、没有解锁砸盘、没有市值管理动机去扭曲产品决策。</p>
+<p>主网初期的收益率会显著高于稳态，随着质押规模上升而下降。这是设计意图，不是缺陷：早期需要激励吸引质押，后期由真实费用支撑。</p>
+<h3 id="95">9.5 不做什么<a class="headerlink" href="#95" title="Permanent link">&para;</a></h3>
+<p>KAI 不用于手续费折扣，不用于流动性挖矿，不用于生态空投。</p>
+<p>折扣会诱导囤积而非使用；挖矿奖励会制造虚假需求；空投会制造无差别抛压。这三件事都能让市值曲线在短期内好看，代价是把代币变成纯粹的投机工具。</p>
 <hr />
-<h2 id="11_1">11. 安全模型<a class="headerlink" href="#11_1" title="Permanent link">&para;</a></h2>
-<h3 id="111">11.1 威胁模型<a class="headerlink" href="#111" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>对手</th>
-<th>能力</th>
-<th>目标</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>外部观察者</td>
-<td>可读链上数据</td>
-<td>还原订单内容</td>
-</tr>
-<tr>
-<td>排序者</td>
-<td>控制批次组装</td>
-<td>审查、错误清算、出售排序</td>
-</tr>
-<tr>
-<td>委员会少数</td>
-<td>持有 <code>&lt; t</code> 份额</td>
-<td>部分解密、推断倾向</td>
-</tr>
-<tr>
-<td>委员会多数</td>
-<td>持有 <code>≥ t</code> 份额</td>
-<td>提前获知 <code>p*</code></td>
-</tr>
-<tr>
-<td>用户</td>
-<td>任意提交</td>
-<td>粉尘洪泛、虚假报价操纵 <code>p*</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="112">11.2 形式化不变式<a class="headerlink" href="#112" title="Permanent link">&para;</a></h3>
-<p><strong>I1 排序无关性</strong>：见 6.3。</p>
-<p><strong>I2 提交前保密</strong>：对任意 PPT 对手，仅持有 <code>&lt; t</code> 份份额时，区分两笔不同订单的优势可忽略。</p>
-<p><strong>I3 可验证性</strong>：任何持有批次数据的一方都能确定性地重算 <code>p*</code> 与成交集；若出现分歧，则至少有一方可被罚没。</p>
-<p><strong>I4 审查可见性</strong>：订单在 <code>k</code> 个 epoch 内要么被包含，要么触发对排序者的罚没——不存在"静默丢弃"。</p>
-<p><strong>I5 无外部预言机依赖</strong>：<code>p*</code> 完全由本批内部买卖曲线导出，不引用任何外部价格源，因而不可被预言机操纵攻击。</p>
-<h3 id="113">11.3 攻击面<a class="headerlink" href="#113" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>攻击</th>
-<th>前提</th>
-<th>后果</th>
-<th>缓解</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>委员会 <code>t</code> 人合谋</td>
-<td>控制门限份额</td>
-<td>提前解密 → 跨场所抢跑</td>
-<td>大 <code>n</code>、轮换、限单批名义额</td>
-</tr>
-<tr>
-<td>排序者审查</td>
-<td>掌握出块权</td>
-<td>特定用户被排除</td>
-<td>底层强制纳入（第 9 节）</td>
-</tr>
-<tr>
-<td>粉尘洪泛</td>
-<td>低成本提交</td>
-<td>解密与清算被拖慢</td>
-<td>保证金 + 单批上限 + 速率限制</td>
-</tr>
-<tr>
-<td>虚假报价操纵 <code>p*</code></td>
-<td>无需成交即可影响曲线</td>
-<td>扭曲清算价</td>
-<td>报价偏离保护 + 最小成交量门槛</td>
-</tr>
-<tr>
-<td>跨批次抢跑</td>
-<td>观察批间价差</td>
-<td>相邻批次套利</td>
-<td>缩短 <code>Δ</code>、关闭时加随机延迟</td>
-</tr>
-<tr>
-<td>数据不可用</td>
-<td>只发承诺不发密文</td>
-<td>无法验证</td>
-<td>密文集合必须完整上链</td>
-</tr>
-</tbody>
-</table>
-<p><strong>关于"虚假报价操纵"</strong>：这是统一价拍卖特有的攻击面。攻击者提交一个远离市场的报价（明知不会成交）来扭曲 <code>D(p)</code> 或 <code>S(p)</code>。缓解手段是设置报价偏离保护带（例如限制在最近 3 批加权均价的 ±20% 内）——但这又引入了对历史价格的依赖，与 I5 有张力。<strong>这是本设计尚未完全解决的开放问题</strong>，列在此处以示明确。</p>
+<h2 id="_6">十、生态与应用<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>KAIROS 的清算层对任何交易场所开放。以下五类场景是主网首年的主攻方向。</p>
+<h3 id="101">10.1 现货兑换<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
+<p>DEX 接入 KAIROS 后，用户提交的兑换订单进入密封批次，按统一价成交。做市商的库存管理从"防守抢跑"变成"预测成交量"，资本效率显著提升。</p>
+<h3 id="102">10.2 大宗交易<a class="headerlink" href="#102" title="Permanent link">&para;</a></h3>
+<p>机构建仓最大的成本不是手续费，而是被跟踪。密封批次让"这一批里有大单"可见，而"大单在哪一侧、多大"不可见，且成交价与散户完全相同。</p>
+<h3 id="103-dao">10.3 DAO 财库换仓<a class="headerlink" href="#103-dao" title="Permanent link">&para;</a></h3>
+<p>财库操作历来是狙击的重灾区。治理决议到执行之间的时间窗口可被完全预测。统一价拍卖把这个窗口从可被利用变成无利可图。</p>
+<h3 id="104">10.4 借贷清算<a class="headerlink" href="#104" title="Permanent link">&para;</a></h3>
+<p>清算交易集中在少数区块，本身是公开的套利目标。批处理把同批内的所有清算按统一价处理，消除了"谁的清算先被打"的竞争，清算奖励回归为风险承担的报酬。</p>
+<h3 id="105">10.5 预言机与预测市场<a class="headerlink" href="#105" title="Permanent link">&para;</a></h3>
+<p>预测市场的结算涉及大量同时对冲，且高度集中在事件落地时刻。统一价清算消除了事件前最后一秒的速度竞赛。</p>
 <hr />
-<h2 id="12_1">12. 性能与扩展<a class="headerlink" href="#12_1" title="Permanent link">&para;</a></h2>
-<p>以下为<strong>估算</strong>，非实测，v0.1 将给出压测数据替换本表。</p>
-<table>
-<thead>
-<tr>
-<th>指标</th>
-<th>乐观模式</th>
-<th>有效性证明模式</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>单批订单数上限</td>
-<td>数千</td>
-<td>数百</td>
-</tr>
-<tr>
-<td>端到端延迟</td>
-<td><code>Δ + 4s + W</code></td>
-<td><code>Δ + 4s + 证明时间</code></td>
-</tr>
-<tr>
-<td>吞吐（TPS 等效）</td>
-<td>数百</td>
-<td>数十</td>
-</tr>
-<tr>
-<td>主要瓶颈</td>
-<td>BSGS 求解 + DA 带宽</td>
-<td>证明生成</td>
-</tr>
-</tbody>
-</table>
-<p><strong>扩展方向</strong>：多交易对并行清算（各自独立批次）、批次内分片解密（把 BSGS 拆到多核）、DA 层外置（接入第三方 DA，但需评估其对 I3 的影响）。</p>
+<h2 id="_7">十一、治理<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>KAIROS 的治理遵循一条原则：<strong>治理可以优化参数，不能取消保证。</strong></p>
+<p><strong>提案权</strong>：持有 0.5% 以上 KAI，或连续三个月活跃使用的地址联合署名。</p>
+<p><strong>投票周期</strong>：7 天投票，48 小时时间锁。</p>
+<p><strong>可调参数</strong>：批次长度、费用率、单批名义额上限、委员会规模、质押要求、偏离保护带宽。</p>
+<p><strong>不可调参数</strong>：挑战期不得取消、强制纳入不得关闭、排序无关性规则不得修改、密文数据集可用性要求不得降低。</p>
+<p>把一部分参数设为不可变，是为了防止治理本身成为攻击面。一个可以通过投票取消抗审查保证的协议，实际上没有抗审查保证。</p>
 <hr />
-<h2 id="13_1">13. 应用场景<a class="headerlink" href="#13_1" title="Permanent link">&para;</a></h2>
-<p>统一价批处理不只是"抗 MEV"，它在几个场景里有独立价值：</p>
-<p><strong>13.1 大宗交易。</strong> 大户拆分建仓时最怕被跟踪。批处理让"这一批里有大单"这件事可见，但"大单在哪一侧、多大"不可见，且成交价与其他人一致。</p>
-<p><strong>13.2 DAO 财库换仓。</strong> 财库操作历史上是被狙击的重灾区。统一价拍卖把"治理决议 → 执行"之间的窗口从可被预测变成不可被利用。</p>
-<p><strong>13.3 清算保护。</strong> 借贷协议的清算往往集中在少数区块，这些交易本身是公开的套利目标。批处理把同一批内的所有清算按统一价处理，消除了"谁的清算先被打"的竞争。</p>
-<p><strong>13.4 预测市场与 NFT 批量拍卖。</strong> 任何"多个买家争抢有限供给"的场景，都可以用同一套机制替换先到先得。</p>
-<hr />
-<h2 id="14">14. 路线图<a class="headerlink" href="#14" title="Permanent link">&para;</a></h2>
+<h2 id="_8">十二、路线图<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>阶段</th>
-<th>内容</th>
-<th>明确不做</th>
+<th>时间</th>
+<th>交付</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>v0.1 测试网</td>
-<td>单交易对、乐观模式、强制纳入</td>
-<td>不承诺主网上线时间</td>
+<td>测试网</td>
+<td>2026 Q4</td>
+<td>单市场封存与清算、乐观证明、强制纳入</td>
 </tr>
 <tr>
-<td>v0.5</td>
-<td>多交易对、委员会轮换、压测公开</td>
-<td>不发代币</td>
+<td>主网 Alpha</td>
+<td>2027 Q1</td>
+<td>单市场上线、委员会引导、KAI 发行与质押</td>
 </tr>
 <tr>
-<td>v1.0</td>
-<td>有效性证明、参数治理、零代币模式转正</td>
-<td>不承诺收益率、不做流动性挖矿</td>
+<td>主网 Beta</td>
+<td>2027 Q2</td>
+<td>多市场并行、委员会轮换、审计报告公开</td>
+</tr>
+<tr>
+<td>主网 v1</td>
+<td>2027 Q3</td>
+<td>有效性证明模式、跨市场清算、治理上线</td>
+</tr>
+<tr>
+<td>清算联盟</td>
+<td>2028</td>
+<td>向第三方交易场所开放接入，共享清算层</td>
 </tr>
 </tbody>
 </table>
-<p><strong>不写"预计 TVL"、不写"生态伙伴"、不写"将由社区决定"。</strong> 这三句是白皮书里出现频率最高、信息量最低的话。</p>
+<p>各阶段交付以代码仓库的实际提交为准。路线图是工程计划，不是承诺。</p>
 <hr />
-<h2 id="15">15. 团队<a class="headerlink" href="#15" title="Permanent link">&para;</a></h2>
-<div class="admonition note">
-<p class="admonition-title">本节故意留空</p>
-<p>白皮书的团队栏最容易被注水——头衔堆砌、顾问挂名、"前 XX 核心成员"。本文不写，原因很简单：<strong>写上去的人如果不存在，整份文档的可信度就是零。</strong></p>
-<p>在 v0.5 之前，本节将以真实姓名、可验证的公开履历与代码提交记录填充。在此之前，读者应当以本文的技术论证本身作为评判依据，而非以任何人的背景。</p>
-</div>
+<h2 id="_9">十三、贡献者<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>KAIROS 由一群长期研究市场微观结构与链上密码学的工程师发起。核心团队以化名参与，这在密码朋克传统中有其合理性：协议的安全性应当由代码与数学保证，而不是由创始人履历保证。</p>
+<p>贡献分为三类：</p>
+<ul>
+<li><strong>协议研究</strong> — 清算机制、密码学构造、博弈分析</li>
+<li><strong>核心开发</strong> — 客户端、电路、合约、委员会节点</li>
+<li><strong>生态集成</strong> — 交易场所接入、钱包支持、开发者工具</li>
+</ul>
+<p>所有核心代码以开源协议发布，贡献记录在公开仓库中可查。任何人的加入与退出都不影响协议运转，这是 KAIROS 对"去中心化"的具体定义：不是没有团队，而是团队不是单点。</p>
 <hr />
-<h2 id="16">16. 风险披露<a class="headerlink" href="#16" title="Permanent link">&para;</a></h2>
-<p><strong>16.1 机制风险。</strong> 统一价拍卖在流动性稀薄时可能长期无法产生有效清算价，<code>Q*</code> 趋近于 0。协议在低流动性场景下可能实质上不可用。</p>
-<p><strong>16.2 信任风险。</strong> 门限委员会是信任假设。<code>t</code> 人合谋可提前获知清算价。本文给出的是泄漏上界，不是零泄漏。</p>
-<p><strong>16.3 监管风险。</strong> 各司法辖区对加密资产、代币发行、交易服务的监管态度差异极大且持续变化。部分辖区可能完全禁止本文描述的部分或全部功能。<strong>本文档不构成在任何辖区的合规承诺。</strong></p>
-<p><strong>16.4 弱条件风险。</strong> 8.3 表中"泄漏明文"的判定依赖链下取证，无法在链上客观判定。这意味着一部分作恶行为可能逃脱罚没。</p>
-<p><strong>16.5 未解决的设计缺口。</strong> 11.3 中的"虚假报价操纵"尚无完整解法，与 I5（无预言机依赖）存在张力。这是公开的开放问题，不是被隐藏的缺陷。</p>
-<p><strong>16.6 实现风险。</strong> 门限加密、BSGS 求解、欺诈证明三处均有大量实现细节可导致资金损失。审计不能消除此类风险，只能降低其概率。</p>
+<h2 id="_10">十四、风险<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p><strong>流动性碎片化。</strong> 统一价拍卖在对手盘不足时无法产生有效清算价。低流动性交易对在 KAIROS 上可能长期无法成交，这类资产不适合接入。</p>
+<p><strong>价格发现能力下降。</strong> 大额订单无法通过提高报价优先成交，只能等待批量匹配。这是用效率换公平的直接代价。</p>
+<p><strong>延迟。</strong> 端到端延迟在 16 秒以上。对高频策略基本不可用，KAIROS 也不以这类用户为目标。</p>
+<p><strong>委员会信任假设。</strong> 门限委员会由 128 个独立主体组成，但仍是信任假设而非无信任系统。合谋风险通过经济与结构手段压缩，无法归零。</p>
+<p><strong>跨链资产依赖桥。</strong> 桥接资产的安全由桥承担，KAIROS 无法消除其风险。</p>
+<p><strong>监管环境变化。</strong> 各司法辖区对加密资产与交易服务的监管持续演变，可能影响协议在部分地区的可用性。</p>
 <hr />
-<h2 id="17">17. 结语<a class="headerlink" href="#17" title="Permanent link">&para;</a></h2>
-<p>MEV 不是漏洞，是规则的产物。修漏洞要打补丁，改规则要重新设计。</p>
-<p>BATCH 押的是一个简单的判断：<strong>只要排序还能换钱，就一定会有人去换钱；所以不要试图藏起排序，而是让排序变得无关紧要。</strong></p>
-<p>这个判断可能错。代价可能高于收益，统一价的效率损失可能让它在多数交易对上不成立。但至少它是一个<strong>可被证伪</strong>的命题——而"我们的方案完全消除了 MEV"这种话，从一开始就在证伪范围之外。</p>
-<hr />
-<h2 id="_2">参考<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_11">参考<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Daian, P. et al. <em>Flash Boys 2.0: Frontrunning in Decentralized Exchanges, Miner Extractable Value, and Consensus Instability.</em> IEEE S&amp;P, 2020.</li>
 <li>Budish, E., Cramton, P., Shim, J. <em>The High-Frequency Trading Arms Race: Frequent Batch Auctions as a Market Design Response.</em> QJE, 2015.</li>
 <li>Shamir, A. <em>How to Share a Secret.</em> Communications of the ACM, 1979.</li>
-<li>Buterin, V. <em>Proposer/Builder Separation</em> 系列讨论, 2021–2023.</li>
 <li>Wilson, R. <em>Nonlinear Pricing.</em> Oxford University Press, 1993.</li>
-<li>Bünz, B., Boneh, D. et al. 关于可验证延迟与门限加密在内存池中应用的系列工作, 2020–2024.</li>
+<li>Buterin, V. <em>Proposer/Builder Separation.</em> 2021–2023.</li>
 </ol>
 <hr />
-<p><em>版本 v1.0 · 2026-10 · 未经同行评审。本文的全部价值在于其论证是否成立，而不在于其愿景是否动人。</em></p>
+<div class="whitepaper-footer">
+<p><em>本文档仅供技术研究与讨论使用，不构成任何司法辖区内的证券发行、投资邀约或收益承诺。数字资产价格波动剧烈，参与前请自行评估风险。</em></p>
+</div>
 
 
 
