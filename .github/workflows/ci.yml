@@ -21,6 +21,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # 首页「最近更新」由 git 历史生成，浅克隆拿不到完整 log
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -48,6 +51,9 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: 生成首页「最近更新」
+        run: python scripts/gen_updates.py
 
       - name: Build site
         run: mkdocs build --strict
