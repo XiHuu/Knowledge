@@ -116,14 +116,6 @@ _按提交时间从新到旧，自动生成。想看全部改动就翻 [commit �
     [:octicons-arrow-right-24: 英国公司成本](tax/uk-company-cost.md) ·
     [:octicons-arrow-right-24: 马来西亚 TIN](tax/malaysia-tin.md)
 
--   :material-cube-outline:{ .lg .middle } **区块链与协议设计**
-
-    ---
-
-    链上机制设计、密码学构造与白皮书。
-
-    [:octicons-arrow-right-24: KAIROS（KAI）白皮书](crypto/kairos-whitepaper.md)
-
 -   :material-camera-outline:{ .lg .middle } **摄影器材**
 
     ---
