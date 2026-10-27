@@ -1,161 +1,239 @@
-# 德国税号：010250 表到底是什么，人在国内能不能用
+# 德国个人税号（IdNr）：0 成本 DIY 到底能不能做
 
-来源：德国联邦财政部表单系统（`formulare-bfinv.de`，010250，Stand **02/2026**）、
-BZSt（联邦中央税务局）FAQ、柏林服务门户 / 科隆大学 / 萨克森 / 巴伐利亚财政局官方说明、
-BMF-Schreiben vom 16.07.2026（境外企业增值税登记新表样）。整理时间 2026-10。
+来源：BZSt（联邦中央税务局）IdNr 页面与 FAQ（2026-10 抓取）、
+柏林服务门户 `service.berlin.de` 第 329216 号服务（版本 2026-05-27）、
+联邦财政部表单系统 010250、维尔茨堡大学 / 康斯坦茨大学的 010250 实例。
+整理时间 2026-10。
 
-## 先说结论
+## 结论先行
 
-**010250 不是「德国税务登记表」，它是「为不在德国户籍登记的人核发个人税号（IdNr）」的申请表。**
-而且它有硬前提：**你必须和德国存在税务连接点**。人在国内、完全不在德国活动，这张表递上去会被退回。
+**「0 成本」是真的。**
+申请德国个人税号（IdNr）**不收任何费用**，010250 表免费下载、免费邮寄、税局免费回信。
+没有任何"工本费""加急费"。
 
-> 中文圈里常把"德国税务登记表"和 010250 混称，其实完全不是一张表 ——
-> 那张企业用的叫 *Fragebogen zur steuerlichen Erfassung*，编号 034250，而且必须走 ELSTER 电子提交。
+**「人人可 DIY」是假的。**
+IdNr 不是一张可以主动申请的证，它是**纳税义务的副产品**。
+德国官方只对两类人发：在德国有应税活动但不住在德国的人，以及在德国住但无固定住所的人。
+
+> 柏林的官方表述（原文）：
+> „Nicht meldepflichtige Personen erhalten für Zwecke der Einkommensbesteuerung auf Antrag eine
+> Identifikationsnummer vom Finanzamt."
+> —— 非登记人员是**为所得税目的**申请 IdNr 的。
+>
+> 适用人群只有两类：
+> „in Deutschland tätige Personen mit Wohnsitz im Ausland"（在德国活动、住所在境外）
+> 或 „im Inland lebende Personen ohne ständigen Wohnsitz"（在德国无常住所，如无家可归者）。
+
+一句话：**你手上得先有一个德国付款方，税局才会给你编号。**
+没有付款方，就没有这条流程。
 
 ## 德国的三个「税号」，先分清
 
-| 号码 | 德文 | 谁发 | 形态 | 用途 | 怎么拿到 |
-| --- | --- | --- | --- | --- | --- |
-| **个人税号** | Steuerliche Identifikationsnummer（IdNr / Steuer-ID） | BZSt（有德国户籍者自动发放）／ 当地 Finanzamt（非登记人员） | **11 位纯数字，终身不变** | 个人所得税、雇主代扣（ELStAM）、报税身份标识 | ①在德落户 → 自动寄到户籍地址 ②交德国个税申报 → 税务局随申报分配 ③**提交 010250** |
-| **税号** | Steuernummer | 当地 Finanzamt | 10–13 位，通常带 `/` | 企业开票、VAT 申报 | Fragebogen zur steuerlichen Erfassung（**必须 ELSTER**，§ 138 Abs. 1b AO） |
-| **增值税号** | Umsatzsteuer-Identifikationsnummer（USt-IdNr） | BZSt | `DE` + 9 位 | 欧盟内 B2B 跨境交易免税 | 完成增值税登记、税务局把数据转给 BZSt 后才能发 |
+| 号码 | 德文 | 谁发 | 形态 | 怎么拿到 |
+| --- | --- | --- | --- | --- |
+| **个人税号** | Steuerliche Identifikationsnummer（IdNr / Steuer-ID） | BZSt（有户籍者自动发）／ Finanzamt（非登记人员） | 11 位纯数字，终身不变 | ①在德落户 → 自动寄到 ②报德国个税 → 随申报分配 ③**交 010250** |
+| **税号** | Steuernummer | 当地 Finanzamt | 10–13 位，通常带 `/` | Fragebogen zur steuerlichen Erfassung（**必须 ELSTER**） |
+| **增值税号** | USt-IdNr | BZSt | `DE` + 9 位 | 完成增值税登记后由税局转给 BZSt |
 
-一句话记住：**IdNr 是「人」的，Steuernummer 是「税局给你的档案号」，USt-IdNr 是「欧盟内做生意用的」。**
+**IdNr 是「人」的，Steuernummer 是「税局给你建的档案号」，USt-IdNr 是「欧盟内做生意用的」。**
+三者不能互换，别拿 Steuernummer 当身份证号填。
 
-## 010250 的准入门槛
+## 三条合法入口（自测你走哪条）
 
-柏林服务门户列的条件是**两条必须同时满足**：
+### 入口 A：在德国受雇
 
-1. 在德国**没有**户籍登记义务（没有住所、没有固定居所）
-2. **并且**存在德国纳税义务，或在德国从事非独立劳动
+BZSt 原文：
 
-官方点名的适用人群：
+> „Für Personen, die in Deutschland arbeiten und ihren Wohnsitz im Ausland haben
+> (z.B. beschränkt steuerpflichtige Saisonarbeiter, kurzfristig beschäftigte
+> Arbeitnehmer/Praktikanten/Studenten), ist das Betriebsstättenfinanzamt des Arbeitgebers
+> für die Veranlassung der Zuteilung der IdNr zuständig,
+> § 39 Absatz 2 Satz 2 EStG in Verbindung mit § 39 Absatz 3 Satz 1 EStG."
 
-- 在德国工作但住在国外的人（雇员、季节工、短期雇员 / 实习生 / 学生）
-- 在德国负有（可能是有限的）个人所得税义务的**自雇者、营业者、出租人**
+解读：**在德国境内工作**、但住所不在德国的人（季节工、短期雇员、实习生、学生），
+由**雇主所在地的税局**（Betriebsstättenfinanzamt）负责启动 IdNr 的分配。
 
-🔴 **反过来读**：如果你既不在德国工作、也没有德国来源所得、也不是德国纳税人，
-第 2 条不成立 —— **010250 没有适用场景**。
+⚠️ 关键点在「**in Deutschland arbeiten**」——
+必须是**在德国境内实际提供劳动**。人在中国远程给德国公司干活，
+不构成德国工资税义务，走不通这条路。
 
-（BZSt 自己的 FAQ 里有个同构的例子：住在国外的孩子因为在德国不纳税，所以**不发** IdNr。）
+### 入口 B：德国高校的客座讲学 / 荣誉职位 / 劳务合同
 
-## 人在国内的实操：怎么填、寄给谁
+这是中文圈最少提到、但**对国内居民实际可行**的一条。
 
-### 表从哪来
+逻辑是这样的：德国大学给你发演讲费（Honorar）或报销差旅费时，
+按《申报条例》（Mitteilungsverordnung）**必须向税局上报这笔付款**，
+而要上报，就必须要你的 IdNr。所以你一开口要，学校就会配合办理。
 
-`https://www.formulare-bfinv.de/` → 搜索框输 `010250`。
-这是仍在用 PDF / 纸质流程的少数表之一，可以下载、填写、签字、邮寄。
+维尔茨堡大学直接把填好的 010250 放在线上，申请理由一栏填的是：
 
-### 寄给谁（最常见的退回原因就是寄错税局）
+```
+Grund für die Vergabe der IDNr.:
+Mitteilungsverordnung - Receipt of notifiable payments
+kein Arbeitgeber, Aufenthalt an der Universität Würzburg
+```
 
-| 你的身份 | 受理机关 |
+即「按 Mitteilungsverordnung 收取需申报的报酬 / 无雇主，在维尔茨堡大学停留」。
+
+受理机关：**主管该高校的那家 Finanzamt**（不是 BZSt，也不是你家门口的任何税局）。
+
+### 入口 C：德国来源的其他有限纳税所得
+
+- 在德国出租房产
+- 版税、许可费（Lizenzgeber）
+- 以艺术家 / 运动员身份在德国取得收入（§ 50a EStG）
+- 德国公司的监事会成员报酬（Aufsichtsrat）
+
+这类都会触发 § 49 EStG 的有限纳税义务，进而需要 IdNr。
+受理机关是管你这类所得的 Finanzamt。
+
+### 没有入口的情况
+
+以下情形**一条都不成立**时，德国不发 IdNr：
+
+- 不在德国工作
+- 没有德国来源收入
+- 不是德国纳税人
+- 不是 § 1 Abs. 2 EStG 的特殊人群（驻外使领馆人员、联邦国防军、德国机构派驻海外人员）
+
+BZSt 自己给过一个同构的例子：住在国外的孩子因为**在德国不纳税**，
+所以「**不发** IdNr」——「Kinder, die im Ausland leben, sind grundsätzlich in
+Deutschland nicht steuerpflichtig. In diesem Fall wird daher keine
+Identifikationsnummer (IdNr) zugeteilt.」
+
+成年人同理。
+
+## 操作步骤（以入口 A / B 为例）
+
+### 1. 先拿到德国一方的付款凭证
+
+不是"先申请税号再找工作"，顺序是反的：
+
+- 入口 A：雇佣合同 / 工作合同
+- 入口 B：邀请函、讲学合同、Honorarvereinbarung
+- 入口 C：租赁合同 / 许可协议
+
+**没有这一纸，后面全部白做。** 税局第一个问题就是"你凭什么要这个号"。
+
+### 2. 下载 010250
+
+`https://www.formulare-bfinv.de/` → 搜索 `010250`。
+
+表名：*Antrag auf Vergabe einer steuerlichen Identifikationsnummer für
+nicht meldepflichtige Personen durch das Finanzamt*
+（非登记人员个人税号申请表 · 由税局核发）
+
+这是少数仍然可以**纸质办理**的表。
+
+### 3. 逐项填表
+
+| 字段 | 怎么填 |
 | --- | --- |
-| 受雇于德国雇主 | **雇主的** Betriebsstättenfinanzamt（雇主所在地税局） |
-| 自雇 / 出租 / 有限纳税义务 | 管你个人所得税的那个 Finanzamt |
+| Familienname / Geburtsname | 姓 / 曾用姓（没有就留空） |
+| Vorname | 名 |
+| Anschrift im Ausland | 中国地址，街道门牌 + 邮编 + 城市 + 国家 |
+| Geburtsdatum / Geburtsort | 出生日期 / 出生地 |
+| Geburtsstaat | 出生国 |
+| Anschrift in Deutschland | 若有德国地址就填，没有留空 |
+| Voraussichtliche Aufenthaltsdauer | 预计在德停留时长（入口 B 填讲学期间） |
+| **Grund für die Vergabe der IDNr.** | 见下 |
+| Arbeitgeber（名称 / 税号 / 地址） | 入口 A 必填；入口 B 填 `kein Arbeitgeber` |
+| Rückfragen（联系电话） | 建议填，税局常打电话核对 |
+| Ort, Datum, Unterschrift | 地点、日期、**本人手签** |
 
-### 要填的字段（按 02/2026 版）
+**申请理由那一栏是整张表的重点**，三种写法：
 
-- 姓、曾用名（Geburtsname）、名
-- **境外地址**：街道 + 门牌 / 邮编 + 城市 + 国家 —— 就填中国地址
-- 出生日期、出生地、**出生国**
-- 目前在德国的停留：`Ja`（按天 / 短期）或 `Nein`（如跨境通勤）
-- 德国地址（如有）+ 预计停留期间（起 / 止）
-- **申请原因**：`Arbeitnehmer`（雇员）或 `Sonstiger Grund`（其他，需文字说明）
-- 雇主名称 + 雇主税号 + 雇主地址
-- 联系电话（Rückfragen）
-- **授权接收人**（如雇主）+ 用途（工资税代扣 / 其他）
-- 地点、日期、**本人签字**
+- `Arbeitnehmer`（雇员）—— 入口 A
+- `Mitteilungsverordnung – Erhalt meldepflichtiger Zahlungen`（按申报条例收取需申报报酬）—— 入口 B
+- `Sonstiger Grund` + 一句德语说明 —— 入口 C，例如 `Einkünfte aus Vermietung in Deutschland`
 
-### 随附材料
+### 4. 附材料
 
-**护照或身份证复印件**（官方写的是 Kopie，不要求公证）。
+- **护照信息页复印件**（官方只要求 Kopie，不要求公证）
+- 入口 A：雇佣合同
+- 入口 B：邀请函 / 讲学合同
+- 入口 C：租赁合同 / 许可协议
 
-### 收到方式
+### 5. 寄给谁（最常见的退回原因就是寄错）
 
-IdNr 会**邮寄到你填的境外地址**；也可以在表里指定由某个人（例如雇主）代收。
-**不收费**。
-
-## 三条路线怎么选
-
-| 你的情况 | 该用哪张表 |
+| 你的情况 | 受理机关 |
 | --- | --- |
-| 在德国受雇或有有限纳税义务，人住在国内 | **010250** |
-| 只是要提交德国个税申报 | **不用单独申请**，申报过程中税务局会给 IdNr |
-| 境外公司（在德国无固定营业场所）要在德国做应税业务、要 USt-IdNr | **Fragebogen zur umsatzsteuerlichen Erfassung von im Ausland ansässigen Unternehmern（FsEAusUN）** —— 可用纸质，有德 / 英 / 法三语 |
-| 在德国设立了公司 / 有固定营业场所 | Fragebogen zur steuerlichen Erfassung（034250），**必须 ELSTER 电子提交** |
-| 完全没有任何德国连接点，只想「挂个德国税号」 | **走不通**。德国不发无连接点的 IdNr |
+| 受雇于德国雇主 | **雇主所在地**的 Betriebsstättenfinanzamt |
+| 德国高校讲学 / 荣誉职位 | 主管**该高校**的 Finanzamt |
+| 房租 / 版税 / § 50a 所得 | 管你这类所得的 Finanzamt |
+| 不确定 | 打 BZSt 热线 +49 228 406-1240 问，或让德方付款单位告诉你 |
 
-### 境外企业那条路（FsEAusUN）要什么
+### 6. 收件与时效
 
-- BMF-Schreiben **2026-07-16** 发布新版 Vordruckmuster，**自 2026 纳税年度起适用**，
-  德 / 英 / 法三个语种等效
-- 以波恩税局对第三国企业的清单为例，常要：
+- IdNr 以**平信**寄到你填的境外地址（中国地址就写中国）
+- **不收费**
+- 实务上 3 周到 3 个月不等；德国税局办事用德语，回复也是德语
+- 收不到可让德方单位代收（表里有"授权接收人"一栏）
 
-  1. FsEAusUN 表单本体
-  2. **税收居民证明**（Ansässigkeitsbescheinigung）——
-     中国这边对应《**中国税收居民身份证明**》，向主管税务机关申请
-  3. 公司成立文件（章程 / 注册证书之类）
-  4. 法定代表人护照复印件
-  5. 相应附页
-  6. 同意与税局邮件沟通的声明
-  7. 填表指南（Ausfüllhilfe）
+## 为什么 X 上有人说「0 成本就能办」
 
-- 🔴 **附页别漏**：附页按业务形态分 ——
-  `Körperschaften und Gesellschaften`（法人 / 合伙）、`Einrichtungen`（机构）、
-  **`Handel mit Waren über das Internet`（通过互联网销售货物）**、`Personenbeförderung`（客运）、
-  `Anteilseigner`（股东）。**只在网上卖货的境外企业要额外填网络销售那一张。**
+因为他们手里**已经有了那个付款方**。
 
-## 如果你要的其实是「个人税号」本身
+最典型的是德国大学的客座讲学：学校本身有申报义务，
+流程是学校推着走的，申请人只需要签一张表、寄一封国际信。
+邮费几欧，除此之外零成本。
 
-先把最省事的一句话说清楚：**你已经有中国的税号了 —— 就是你的身份证号。**
+把这个场景抽掉，剩下的就只有一句空话。
+**免费的前提是"你已经够格"，而不是"你申请了就够格"。**
 
-- 国家税务总局《关于自然人纳税人识别号有关事项的公告》：
-  「有中国公民身份号码的，以其**中国公民身份号码**作为纳税人识别号」
-- 银行的 CRS 表格脚注也是这么写的。恒生（中国）《个人税收居民身份声明》原文：
-  「如客户国籍为中国，且为中国税收居民，则纳税人识别号码为**中国居民身份证号码**」
-- 汇丰的说明里同样把「身份证号码」列为 TIN 的「功能等价物」
+## 三条红线
 
-所以境外银行 / 券商 / W-8BEN / CRS 自证表里问 **TIN / 纳税人识别号**，
-中国税收居民个人填 **18 位身份证号**就行，**不需要**一个境外税号。
+1. **伪造德国住址** —— 德国户籍登记（Anmeldung）要房东确认（Wohnungsgeberbestätigung），
+   造假属 Meldebetrug，且税局与户籍机关数据互通。
+2. **伪造雇佣 / 讲学关系** —— 税局会向雇主核实，Urkundenfälschung（文书伪造）是刑事罪。
+3. **买号** —— IdNr 与个人终身绑定、全国唯一（§ 139a Abs. 1 AO）。
+   买到的一定是别人的号，属于身份冒用，后果比没有号严重得多。
 
-### 「个人税号」不是可以单独申请的身份凭证
+## 如果你要的其实是「一个能填表的号」
 
-全世界的个人税号遵循同一条逻辑：**它是纳税义务的副产品，不是身份证件。**
+**你已经有中国的税号了 —— 就是你的身份证号。**
 
-| 国家 / 地区 | 个人税号 | 非居民个人能不能拿 | 前提 |
+- 《关于自然人纳税人识别号有关事项的公告》：
+  「有中国公民身份号码的，以其中国公民身份号码作为纳税人识别号」
+- 银行 CRS 表格脚注同样如此：中国税收居民个人的 TIN 就是 18 位身份证号
+
+所以境外银行 / 券商 / W-8BEN / CRS 自证表问 TIN 时，填身份证号即可，
+**不需要**一个境外税号。
+
+### 各国个人税号对非居民的开放度
+
+| 国家 | 个人税号 | 非居民能不能拿 | 前提 |
 | --- | --- | --- | --- |
-| 中国 | 身份证号（18 位） | — | **你已经有** |
-| 美国 | ITIN（9 位） | ✅ 相对可行 | 必须有**美国联邦纳税目的**（美国来源收入 / 需报税）。IRS 明文：不会仅因开户、做电商或创业而签发 |
-| 英国 | UTR（10 位） | ⚠️ 有条件 | 必须登记 Self Assessment（如在英出租房产 → SA1 + NRL1）。无 NI 号也能办，但只能纸递，海外邮寄约 3 周起 |
-| 德国 | IdNr（11 位） | ❌ 基本不行 | 必须有德国纳税义务，或在德受雇 |
+| 中国 | 身份证号（18 位） | — | 你已经有 |
+| 美国 | ITIN（9 位） | ✅ 相对可行 | 必须有美国联邦纳税目的；IRS 明文：不会仅因开户、做电商或创业而签发 |
+| 英国 | UTR（10 位） | ⚠️ 有条件 | 必须登记 Self Assessment（如在英出租房产 → SA1 + NRL1） |
+| 德国 | IdNr（11 位） | ❌ 无连接点不行 | 在德工作，或有德国来源所得 |
 | 马来西亚 | TIN | ⚠️ 有条件 | 有马来西亚来源收入 |
-| 香港 | 无独立个人税号 | — | 只在报税表上才有编号 |
+| 香港 | 无独立个人税号 | — | 只在报税表上出现编号 |
 
-🔴 **反过来看**：凡是「交钱就能办境外个人税号」的广告，要么在卖别的东西
-（公司注册、地址挂靠、某个小国的居住身份），要么就是骗局 ——
-税号本身没有「代办」空间，它由纳税义务触发，不由申请动作触发。
+**凡是「交钱就能办境外个人税号」的广告，卖的都是别的东西**——
+公司注册、地址挂靠、某个小国的居留身份，或者干脆是骗局。
+税号由纳税义务触发，不由申请动作触发。
 
 ### 「税号」和「税务居民证明」是两回事
 
 | 你想要 | 实际该办什么 | 找谁 |
 | --- | --- | --- |
-| 一个号码用来填表 | 身份证号（已有） | 不用办 |
-| 证明「我是中国税收居民」 | 《**中国税收居民身份证明**》（免费） | 主管税务机关 |
-| 证明「我是某国税收居民」 | 该国出具的 Ansässigkeitsbescheinigung / Certificate of Residence | 该国税务机关 |
-| 在德国 / 欧盟做生意要开票 | 德国的 Steuernummer / USt-IdNr | 见上文 FsEAusUN 那条路 |
+| 一个号码填表 | 身份证号（已有） | 不用办 |
+| 证明「我是中国税收居民」 | 《中国税收居民身份证明》（免费） | 主管税务机关 |
+| 证明「我是某国税收居民」 | 该国出具的 Certificate of Residence | 该国税务机关 |
+| 在德国 / 欧盟做生意要开票 | 德国 Steuernummer / USt-IdNr | 见境外企业增值税登记 |
 
 ## 容易踩的坑
 
-- **010250 ≠ Fragebogen zur steuerlichen Erfassung**，填错表 = 白跑一趟
-- **别信「人在国内也能拿德国税号」的教程**：那些讲的几乎都是「在德受雇」或「在德有房租收入」，
-  把最重要的前提给省略了
-- **只有境内企业那套 100% 电子化**；010250 和 FsEAusUN 都还能纸递
-- 德国税局**办事用德语**（FsEAusUN 提供英法译文，但回复仍是德语）。
-  语言不通就附一份德语说明信，或委托 Steuerberater（税务顾问）
-- **IdNr 不是税务居民证明**。它只是内部识别号。
-  要证明「我是中国税务居民」，出的文件是中国税务机关的《中国税收居民身份证明》；
-  要证明外国企业的居民身份，出的是对方国家的 Ansässigkeitsbescheinigung
-- **IdNr 终身不变、不看地址**；Steuernummer 换辖区会变 —— 别拿 Steuernummer 当身份证号用
+- **010250 ≠ Fragebogen zur steuerlichen Erfassung（034250）**，填错表白跑
+- **入口 A 要求"在德国境内工作"**，远程给德国公司打工不算
+- **寄错税局是最常见的退回原因**：入口 A 寄雇主的税局，入口 B 寄管高校的税局
+- 德国税局**只用德语办事**；语言不通就附德语说明信，或委托 Steuerberater
+- **IdNr 不是税务居民证明**，它只是内部识别号
+- IdNr 终身不变、不看地址；Steuernummer 换辖区会变
+- 别信"人在国内也能拿德国税号"的教程 —— 那些讲的都是"在德受雇"或"在德有房租"，
+  把最重要的前提省略了
 
 ## 相关页面
 

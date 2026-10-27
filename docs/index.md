@@ -15,8 +15,8 @@ _按提交时间从新到旧，自动生成。想看全部改动就翻 [commit �
 | 2026-10-23 | [适马 fp → fp2：六年后换掉了什么](gear/sigma-fp2.md) | 适马 fp → fp2 升级对比 |
 | 2026-10-20 | [美国 ITIN（个人纳税人识别号）](tax/itin-us.md) · [有了 ITIN 之后：1040-NR 的「零申报」到底怎么做](tax/us-zero-return.md) | 新增「有了 ITIN 之后：1040-NR 的零申报到底怎么做」 |
 | 2026-10-19 | [成为 AS operator：自持 ASN、自有 IP 段、自己跑 BGP](network/as-operator.md) | 新增「成为 AS operator：自持 ASN、自有 IP 段、自己跑 BGP」 |
-| 2026-10-19 | [德国税号：010250 表到底是什么，人在国内能不能用](tax/germany-tax-id.md) | 德国税号页补「个人税号」这一节的真相 |
-| 2026-10-19 | [德国税号：010250 表到底是什么，人在国内能不能用](tax/germany-tax-id.md) | 新增「德国税号：010250 表到底是什么，人在国内能不能用」 |
+| 2026-10-19 | [德国个人税号（IdNr）：0 成本 DIY 到底能不能做](tax/germany-tax-id.md) | 德国税号页补「个人税号」这一节的真相 |
+| 2026-10-19 | [德国个人税号（IdNr）：0 成本 DIY 到底能不能做](tax/germany-tax-id.md) | 新增「德国税号：010250 表到底是什么，人在国内能不能用」 |
 | 2026-10-17 | [卡组织与卡等级体系（银联 / Visa / 万事达 / 美国运通）](banking/card-network-tiers.md) | 卡等级页补 Luhn 校验函数与实测检出边界 |
 | 2026-10-17 | [卡组织与卡等级体系（银联 / Visa / 万事达 / 美国运通）](banking/card-network-tiers.md) | 卡等级页补「卡号结构：BIN + Luhn 校验位」 |
 | 2026-10-17 | [玩卡圈的常用站点](banking/card-community-sites.md) · [卡组织与卡等级体系（银联 / Visa / 万事达 / 美国运通）](banking/card-network-tiers.md) · 等 3 页 | 新增「玩卡圈常用站点」 |
